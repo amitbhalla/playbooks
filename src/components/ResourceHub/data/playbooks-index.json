@@ -1,46 +1,47 @@
 [
   {
-    "id": "content-marketing-playbook",
-    "title": "Content Marketing Excellence Playbook",
-    "subtitle": "A comprehensive framework for creating strategic content that drives business results",
-    "description": "Master the art and science of content marketing with this actionable playbook covering strategy development, content creation, distribution, and performance optimization.",
-    "structureFile": "content-marketing-playbook-structure.json",
-    "contentFile": "content-marketing-playbook-content.json",
+    "id": "personal-brand-playbook",
+    "title": "Personal Branding Playbook",
+    "subtitle": "A comprehensive framework for creating a strong personal brand",
+    "description": "Master the art and science of personal branding with this actionable playbook covering strategy development, content creation, distribution, and performance optimization.",
+    "structureFile": "personal-brand-playbook-structure.json",
+    "contentFile": "personal-brand-playbook-content.json",
     "category": "Content Strategy",
-    "level": "Intermediate",
-    "estimatedTime": "25 minutes"
+    "level": "Beginner",
+    "estimatedTime": "15 minutes"
   },
   {
-    "id": "conversion-optimization-guide",
-    "title": "Conversion Rate Optimization Guide",
-    "subtitle": "Proven methodologies to maximize conversions across your marketing funnel",
-    "description": "Transform website visitors into customers with data-driven CRO techniques. This guide covers user research, testing methodologies, and optimization frameworks.",
-    "structureFile": "conversion-optimization-guide-structure.json",
-    "contentFile": "conversion-optimization-guide-content.json", 
-    "category": "Performance Marketing",
-    "level": "Advanced",
+    "id": "prompt-engineering-marketers",
+    "title": "Prompt Engineering for Marketers",
+    "subtitle": "A comprehensive framework for creating strategic content that drives business results",
+    "description": "Master the art and science of prompt engineering with this actionable playbook covering strategy development, content creation, distribution, and performance optimization.",
+    "structureFile": "prompt-engineering-marketers-structure.json",
+    "contentFile": "prompt-engineering-marketers-content.json",
+    "category": "Content Strategy",
+    "level": "Beginner",
+    "estimatedTime": "15 minutes"
+  },
+  {
+    "id": "b2b-demand-generation-playbook",
+    "title": "B2B Demand Generation Playbook",
+    "subtitle": "A comprehensive framework for building a high-performing B2B demand generation engine",
+    "description": "Learn how to develop and execute a B2B demand generation strategy that creates awareness, drives pipeline, and generates revenue with this practical, actionable playbook covering buyer journey mapping, content strategy, lead generation, nurturing, and measurement.",
+    "structureFile": "b2b-demand-generation-playbook-structure.json",
+    "contentFile": "b2b-demand-generation-playbook-content.json",
+    "category": "Demand Generation",
+    "level": "Intermediate",
     "estimatedTime": "30 minutes"
   },
   {
-    "id": "ai-marketing-playbook",
-    "title": "AI-Powered Marketing Playbook",
-    "subtitle": "Leveraging artificial intelligence to transform your marketing strategy",
-    "description": "Learn how to effectively implement AI technologies across your marketing operations to enhance personalization, automate tasks, and gain competitive advantage.",
-    "structureFile": "ai-marketing-playbook-structure.json",
-    "contentFile": "ai-marketing-playbook-content.json",
-    "category": "Marketing Technology",
-    "level": "Advanced",
-    "estimatedTime": "35 minutes"
-  },
-  {
-    "id": "data-analytics-playbook",
-    "title": "Data-Driven Marketing Analytics Playbook",
-    "subtitle": "Building a comprehensive marketing analytics framework for strategic decision-making",
-    "description": "Develop the systems and processes needed to collect, analyze, and act on marketing data effectively, enabling better ROI measurement and optimization.",
-    "structureFile": "data-analytics-playbook-structure.json",
-    "contentFile": "data-analytics-playbook-content.json",
-    "category": "Analytics & Measurement",
-    "level": "Intermediate",
-    "estimatedTime": "28 minutes"
+    "id": "linkedin-personal-branding-guide",
+    "title": "LinkedIn Personal Branding Guide",
+    "subtitle": "A comprehensive framework for creating a strong LinkedIn personal brand",
+    "description": "Master the art and science of LinkedIn personal branding with this actionable playbook covering strategy development, content creation, distribution, and performance optimization.",
+    "structureFile": "linkedin-personal-branding-guide-structure.json",
+    "contentFile": "linkedin-personal-branding-guide-content.json",
+    "category": "Content Strategy",
+    "level": "Beginner",
+    "estimatedTime": "15 minutes"
   }
+  
 ]

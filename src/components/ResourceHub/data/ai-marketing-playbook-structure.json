@@ -1,260 +1,338 @@
 {
-    "id": "ai-marketing-playbook",
-    "version": "1.0",
-    "pages": [
-      {
-        "id": "introduction",
-        "title": "Introduction to AI in Marketing",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "introTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "introDescription"
-          },
-          {
-            "type": "callout",
-            "contentRef": "aiDefinitionCallout"
-          },
-          {
-            "type": "statistic",
-            "contentRef": "marketSizeStat"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "businessImpact"
-          },
-          {
-            "type": "cards",
-            "contentRef": "keyBenefits"
-          }
-        ]
-      },
-      {
-        "id": "ai-marketing-landscape",
-        "title": "The AI Marketing Technology Landscape",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "landscapeTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "landscapeOverview"
-          },
-          {
-            "type": "tabs",
-            "contentRef": "aiTechCategories"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "capabilitiesTitle"
-          },
-          {
-            "type": "grid",
-            "contentRef": "aiCapabilities"
-          },
-          {
-            "type": "callout",
-            "contentRef": "buildVsBuyCallout"
-          }
-        ]
-      },
-      {
-        "id": "strategy-implementation",
-        "title": "AI Strategy & Implementation",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "strategyTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "strategyDescription"
-          },
-          {
-            "type": "process",
-            "contentRef": "implementationProcess"
-          },
-          {
-            "type": "callout",
-            "contentRef": "readinessCallout"
-          },
-          {
-            "type": "featured-list",
-            "contentRef": "implementationPitfalls"
-          }
-        ]
-      },
-      {
-        "id": "ai-use-cases",
-        "title": "Practical AI Use Cases in Marketing",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "useCasesTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "useCasesIntro"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "contentCreationTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "contentCreationDesc"
-          },
-          {
-            "type": "cards",
-            "contentRef": "contentCreationCases"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "personalizationTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "personalizationDesc"
-          },
-          {
-            "type": "cards",
-            "contentRef": "personalizationCases"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "analyticsTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "analyticsDesc"
-          },
-          {
-            "type": "cards",
-            "contentRef": "analyticsCases"
-          }
-        ]
-      },
-      {
-        "id": "ai-content-creation",
-        "title": "AI-Powered Content Creation",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "contentTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "contentDescription"
-          },
-          {
-            "type": "steps",
-            "contentRef": "contentWorkflow"
-          },
-          {
-            "type": "comparison",
-            "contentRef": "contentToolsComparison"
-          },
-          {
-            "type": "callout",
-            "contentRef": "contentQualityCallout"
-          },
-          {
-            "type": "quote",
-            "contentRef": "contentCreatorQuote"
-          }
-        ]
-      },
-      {
-        "id": "customer-experience-ai",
-        "title": "AI-Enhanced Customer Experience",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "cxTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "cxDescription"
-          },
-          {
-            "type": "icon",
-            "contentRef": "cxIcon"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "personalizationEngineTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "personalizationEngineDesc"
-          },
-          {
-            "type": "steps",
-            "contentRef": "personalizationImplementation"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "conversationalAITitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "conversationalAIDesc"
-          },
-          {
-            "type": "cards",
-            "contentRef": "conversationalPlatforms"
-          },
-          {
-            "type": "callout",
-            "contentRef": "cxMeasurementCallout"
-          }
-        ]
-      },
-      {
-        "id": "future-ai-marketing",
-        "title": "The Future of AI in Marketing",
-        "sections": [
-          {
-            "type": "header",
-            "contentRef": "futureTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "futureDescription"
-          },
-          {
-            "type": "grid",
-            "contentRef": "emergingTrends"
-          },
-          {
-            "type": "callout",
-            "contentRef": "ethicalConsiderationsCallout"
-          },
-          {
-            "type": "subheader",
-            "contentRef": "preparationTitle"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "preparationDesc"
-          },
-          {
-            "type": "featured-list",
-            "contentRef": "preparationSteps"
-          },
-          {
-            "type": "statistic",
-            "contentRef": "adoptionStat"
-          },
-          {
-            "type": "paragraph",
-            "contentRef": "conclusionParagraph"
-          }
-        ]
-      }
-    ]
-  }
+  "id": "ai-marketing-playbook",
+  "version": "2.0",
+  "pages": [
+    {
+      "id": "introduction",
+      "title": "Introduction to AI in Marketing: Getting Started",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "introTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "introDescription"
+        },
+        {
+          "type": "callout",
+          "contentRef": "beginnerCallout"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "whyAIMarketing"
+        },
+        {
+          "type": "statistic",
+          "contentRef": "marketSizeStat"
+        },
+        {
+          "type": "cards",
+          "contentRef": "keyBenefits"
+        },
+        {
+          "type": "callout",
+          "contentRef": "playbookGuide"
+        }
+      ]
+    },
+    {
+      "id": "fundamentals",
+      "title": "AI Marketing Fundamentals: The Beginner's Guide",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "fundamentalsTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "fundamentalsDescription"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "aiDefinitionTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "aiDefinition"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "aiTypesTitle"
+        },
+        {
+          "type": "grid",
+          "contentRef": "aiTypes"
+        },
+        {
+          "type": "steps",
+          "contentRef": "beginnerFundamentals"
+        },
+        {
+          "type": "callout",
+          "contentRef": "noTechCallout"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "budgetConsiderationsTitle"
+        },
+        {
+          "type": "comparison",
+          "contentRef": "budgetComparison"
+        }
+      ]
+    },
+    {
+      "id": "strategy-planning",
+      "title": "Planning Your AI Marketing Strategy: First Steps",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "strategyTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "strategyDescription"
+        },
+        {
+          "type": "callout",
+          "contentRef": "strategyCallout"
+        },
+        {
+          "type": "steps",
+          "contentRef": "strategySteps"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "readinessTitle"
+        },
+        {
+          "type": "grid",
+          "contentRef": "readinessChecklist"
+        },
+        {
+          "type": "callout",
+          "contentRef": "smallBusinessCallout"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "commonMistakes"
+        }
+      ]
+    },
+    {
+      "id": "practical-applications",
+      "title": "Practical AI Applications for Any Marketing Budget",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "applicationsTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "applicationsDescription"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "lowBudgetTitle"
+        },
+        {
+          "type": "cards",
+          "contentRef": "lowBudgetApps"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "midBudgetTitle"
+        },
+        {
+          "type": "cards",
+          "contentRef": "midBudgetApps"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "highBudgetTitle"
+        },
+        {
+          "type": "cards",
+          "contentRef": "highBudgetApps"
+        },
+        {
+          "type": "callout",
+          "contentRef": "toolSelectionGuide"
+        },
+        {
+          "type": "quote",
+          "contentRef": "successQuote"
+        }
+      ]
+    },
+    {
+      "id": "content-creation",
+      "title": "AI-Powered Content Creation: A Step-by-Step Guide",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "contentTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "contentDescription"
+        },
+        {
+          "type": "steps",
+          "contentRef": "contentWorkflow"
+        },
+        {
+          "type": "tabs",
+          "contentRef": "contentToolCategories"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "promptingTitle"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "promptingTips"
+        },
+        {
+          "type": "callout",
+          "contentRef": "contentQualityCallout"
+        },
+        {
+          "type": "process",
+          "contentRef": "contentProcess"
+        }
+      ]
+    },
+    {
+      "id": "customer-experience",
+      "title": "Enhancing Customer Experience with AI: Actionable Tactics",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "cxTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "cxDescription"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "personalizationTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "personalizationDescription"
+        },
+        {
+          "type": "steps",
+          "contentRef": "personalizationSteps"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "chatbotsTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "chatbotsDescription"
+        },
+        {
+          "type": "cards",
+          "contentRef": "chatbotImplementation"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "analyticsTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "analyticsDescription"
+        },
+        {
+          "type": "cards",
+          "contentRef": "analyticsImplementation"
+        }
+      ]
+    },
+    {
+      "id": "implementation-roadmap",
+      "title": "Implementation Roadmap: From Beginner to Advanced",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "roadmapTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "roadmapDescription"
+        },
+        {
+          "type": "process",
+          "contentRef": "implementationProcess"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "firstThirtyTitle"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "firstThirtyDays"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "ninetyDayTitle"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "ninetyDayPlan"
+        },
+        {
+          "type": "callout",
+          "contentRef": "measurementCallout"
+        },
+        {
+          "type": "statistic",
+          "contentRef": "successStat"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "conclusionParagraph"
+        }
+      ]
+    },
+    {
+      "id": "thank-you",
+      "title": "Support My Work",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "thankYouTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "thankYouMessage"
+        },
+        {
+          "type": "coffeeCallout",
+          "contentRef": "coffeeCallout"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "resourcesTitle"
+        },
+        {
+          "type": "cards",
+          "contentRef": "additionalResources"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "finalMessage"
+        },
+        {
+          "type": "quote",
+          "contentRef": "authorQuote"
+        }
+      ]
+    }
+  ]
+}

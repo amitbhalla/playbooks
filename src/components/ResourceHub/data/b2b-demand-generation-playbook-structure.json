@@ -1,0 +1,346 @@
+{
+    "id": "b2b-demand-generation-playbook",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Introduction to Modern B2B Demand Generation",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "demandGenDefinition"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "demandGenStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "playBookPromise"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          },
+          {
+            "type": "callout",
+            "contentRef": "playbookGuide"
+          }
+        ]
+      },
+      {
+        "id": "buyer-journey",
+        "title": "Understanding the Modern B2B Buyer's Journey",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "buyerJourneyTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "buyerJourneyDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "buyerJourneyStages"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "buyingCommitteeTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "buyingCommitteeRoles"
+          },
+          {
+            "type": "callout",
+            "contentRef": "journeyMappingCallout"
+          },
+          {
+            "type": "steps",
+            "contentRef": "journeyMappingSteps"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "journeyCommonMistakes"
+          }
+        ]
+      },
+      {
+        "id": "strategy-framework",
+        "title": "Building Your Demand Generation Engine: Strategic Framework",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "strategyTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "strategyDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "strategyCallout"
+          },
+          {
+            "type": "steps",
+            "contentRef": "strategyFramework"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "targetingTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "targetingApproaches"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "messagingTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "messagingFramework"
+          },
+          {
+            "type": "callout",
+            "contentRef": "messagingCallout"
+          }
+        ]
+      },
+      {
+        "id": "content-strategy",
+        "title": "Content That Converts: B2B Content Marketing for Demand Generation",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "contentTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "contentDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "contentCallout"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "contentFormatsByStage"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentCreationTitle"
+          },
+          {
+            "type": "process",
+            "contentRef": "contentCreationProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "distributionTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "distributionChannels"
+          },
+          {
+            "type": "callout",
+            "contentRef": "contentRedemptionCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "contentBestPractices"
+          }
+        ]
+      },
+      {
+        "id": "lead-generation",
+        "title": "Lead Generation Tactics: Multi-Channel Demand Capture",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "leadGenTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "leadGenDescription"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "channelComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "digitalChannelsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "digitalChannels"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "eventsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "eventChannels"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "advancedTacticsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "advancedTactics"
+          },
+          {
+            "type": "callout",
+            "contentRef": "leadQualityCallout"
+          }
+        ]
+      },
+      {
+        "id": "lead-nurturing",
+        "title": "Lead Nurturing & Marketing Automation: Turning Interest Into Opportunity",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "nurturingTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "nurturingDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "nurturingStrategy"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "automationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "automationDescription"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "automationWorkflows"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "nurturingContentTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "nurturingContentTypes"
+          },
+          {
+            "type": "callout",
+            "contentRef": "salesHandoffCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "nurturingBestPractices"
+          },
+          {
+            "type": "quote",
+            "contentRef": "nurturingQuote"
+          }
+        ]
+      },
+      {
+        "id": "measurement-optimization",
+        "title": "Measuring & Optimizing Your Demand Generation Program",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "measurementTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "measurementDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "kpiFramework"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "attributionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "attributionDescription"
+          },
+          {
+            "type": "cards",
+            "contentRef": "attributionModels"
+          },
+          {
+            "type": "callout",
+            "contentRef": "reportingCallout"
+          },
+          {
+            "type": "steps",
+            "contentRef": "optimizationProcess"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "troubleshootingGuide"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "optimizationStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      },
+      {
+        "id": "support-page",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalMessage"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }

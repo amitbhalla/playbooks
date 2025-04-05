@@ -416,6 +416,30 @@ const ResourceHub = () => {
                   </div>
                 </div>
               );
+              
+            case 'coffeeCallout':
+              const coffeeContent = getContent(section.contentRef);
+              return (
+                <div key={sectionIndex} className="section-coffee-callout">
+                  <div className="coffee-callout-content">
+                    <div className="coffee-callout-icon">
+                      {renderIcon(coffeeContent.icon || 'star')}
+                    </div>
+                    <h2 className="coffee-callout-title">{coffeeContent.title}</h2>
+                    <p className="coffee-callout-text">{coffeeContent.content}</p>
+                    {coffeeContent.actionButton && (
+                      <a 
+                        href={coffeeContent.actionButton.url} 
+                        className={`coffee-callout-button ${coffeeContent.actionButton.primary ? 'primary' : 'secondary'}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {coffeeContent.actionButton.text}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              );
             
             case 'featured-list':
               const featuredContent = getContent(section.contentRef);
@@ -596,6 +620,27 @@ const ResourceHub = () => {
           </div>
         </div>
       )}
+      
+      <div className="global-support-section">
+        <div className="support-content">
+          <div className="support-icon">
+            <FontAwesomeIcon icon={faStar} />
+          </div>
+          <h2 className="support-title">☕ Support My Work</h2>
+          <p className="support-text">
+            If you found these resources valuable, please consider supporting my work.
+            Your contribution helps me create more practical, actionable content for marketers like you!
+          </p>
+          <a 
+            href="https://ko-fi.com/amitbhalla" 
+            className="support-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy Me a Coffee
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

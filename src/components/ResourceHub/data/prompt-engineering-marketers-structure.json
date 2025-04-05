@@ -1,0 +1,322 @@
+{
+    "id": "prompt-engineering-marketers",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Introduction to Prompt Engineering for Marketers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "whyPromptEngineering"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "promtEngineeringStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "marketingConnection"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          },
+          {
+            "type": "callout",
+            "contentRef": "playbookGuide"
+          }
+        ]
+      },
+      {
+        "id": "fundamentals",
+        "title": "Prompt Engineering Fundamentals for Marketers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "fundamentalsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "fundamentalsDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "promptAnatomyCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "promptComponents"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "modelDifferencesTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "modelComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "commonMistakesTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "commonMistakes"
+          }
+        ]
+      },
+      {
+        "id": "prompt-patterns",
+        "title": "Essential Prompt Patterns for Marketing",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "patternsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "patternsDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "basicPatternsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "basicPatterns"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "advancedPatternsTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "advancedPatterns"
+          },
+          {
+            "type": "callout",
+            "contentRef": "patternsCombiningCallout"
+          },
+          {
+            "type": "quote",
+            "contentRef": "patternsQuote"
+          }
+        ]
+      },
+      {
+        "id": "marketing-applications",
+        "title": "Prompt Engineering for Key Marketing Functions",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "applicationsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "applicationsDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentCreationTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "contentCreationPrompts"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "socialMediaTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "socialMediaPrompts"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "emailTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "emailPrompts"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "adsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "adsPrompts"
+          }
+        ]
+      },
+      {
+        "id": "prompt-templates",
+        "title": "Ready-to-Use Marketing Prompt Templates",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "templatesTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "templatesDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "blogTemplatesTitle"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "blogTemplates"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "socialTemplatesTitle"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "socialTemplates"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "emailTemplatesTitle"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "emailTemplates"
+          },
+          {
+            "type": "callout",
+            "contentRef": "templateCustomizationCallout"
+          }
+        ]
+      },
+      {
+        "id": "optimization-workflow",
+        "title": "Building Your Prompt Engineering Workflow",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "workflowTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "workflowDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "promptOptimizationProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "promptLibraryTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "promptLibraryDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "promptLibrarySteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "teamTrainingTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "teamTrainingTips"
+          },
+          {
+            "type": "callout",
+            "contentRef": "workflowCallout"
+          }
+        ]
+      },
+      {
+        "id": "future-trends",
+        "title": "Future of Prompt Engineering for Marketers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "futureTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "futureDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "emergingTrends"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "preparationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "preparationDescription"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "preparationSteps"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "futureImpactStat"
+          },
+          {
+            "type": "callout",
+            "contentRef": "ethicalConsiderationsCallout"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalMessage"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }

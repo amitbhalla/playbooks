@@ -1,0 +1,350 @@
+{
+    "id": "personal-brand-playbook",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Building Your Personal Brand: Why, What & How",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "whyPersonalBrand"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "brandingStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "playbookOverview"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          },
+          {
+            "type": "callout",
+            "contentRef": "howToUsePlaybook"
+          }
+        ]
+      },
+      {
+        "id": "brand-foundation",
+        "title": "Building Your Brand Foundation: Self-Discovery",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "foundationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "foundationDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "valuesTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "valuesDescription"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "valueExercises"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "storyTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "storyDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "storyFramework"
+          },
+          {
+            "type": "callout",
+            "contentRef": "discoveryWorksheet"
+          },
+          {
+            "type": "quote",
+            "contentRef": "discoveryQuote"
+          }
+        ]
+      },
+      {
+        "id": "audience-positioning",
+        "title": "Audience & Positioning: Standing Out in Your Space",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "positioningTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "positioningDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "audienceTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "audienceDiscovery"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "differentiationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "differentiationDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "differentiationStrategies"
+          },
+          {
+            "type": "callout",
+            "contentRef": "positioningStatement"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "positioningExamples"
+          }
+        ]
+      },
+      {
+        "id": "brand-identity",
+        "title": "Creating Your Visual & Verbal Identity",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "identityTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "identityDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "visualTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "visualElements"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "verbalTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "verbalElements"
+          },
+          {
+            "type": "callout",
+            "contentRef": "brandConsistency"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "brandExamples"
+          },
+          {
+            "type": "quote",
+            "contentRef": "identityQuote"
+          }
+        ]
+      },
+      {
+        "id": "content-strategy",
+        "title": "Content Strategy for Personal Brand Building",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "contentTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "contentDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentPillarsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "contentPillarsDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "contentPillarExamples"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentTypesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "contentTypes"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentCalendarTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "contentCalendarSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "contentCreationTools"
+          }
+        ]
+      },
+      {
+        "id": "platform-strategy",
+        "title": "Platform Strategy: Where to Build Your Brand",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "platformTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "platformDescription"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "platformBreakdown"
+          },
+          {
+            "type": "callout",
+            "contentRef": "platformSelection"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "optimizationTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "profileOptimization"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "platformGrowthTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "growthStrategies"
+          },
+          {
+            "type": "quote",
+            "contentRef": "platformQuote"
+          }
+        ]
+      },
+      {
+        "id": "30-day-plan",
+        "title": "Your 30-Day Personal Brand Building Plan",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "planTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "planDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "planOverview"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "weekOneTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "weekOneActivities"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "weekTwoTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "weekTwoActivities"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "weekThreeTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "weekThreeActivities"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "weekFourTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "weekFourActivities"
+          },
+          {
+            "type": "callout",
+            "contentRef": "measurementFramework"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "successStat"
+          }
+        ]
+      },
+      {
+        "id": "support-page",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "nextStepsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalThoughts"
+          },
+          {
+            "type": "quote",
+            "contentRef": "finalQuote"
+          }
+        ]
+      }
+    ]
+  }
