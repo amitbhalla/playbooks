@@ -80,11 +80,28 @@ const ResourceHub = () => {
       try {
         // In production, you would fetch this from your server
         const response = await import('./data/playbooks-index.json');
-        setPlaybooks(response.default);
+        const playbooks = response.default;
+        setPlaybooks(playbooks);
         
-        // Set the first playbook as default if available
-        if (response.default.length > 0) {
-          setSelectedPlaybookId(response.default[0].id);
+        // Check URL parameters for a specific playbook index
+        const urlParams = new URLSearchParams(window.location.search);
+        const playbookParam = urlParams.get('p');
+        
+        if (playbookParam && !isNaN(parseInt(playbookParam)) && playbooks.length > 0) {
+          // Convert parameter to integer (1-based) and adjust to 0-based index
+          const playbookIndex = parseInt(playbookParam) - 1;
+          
+          // Check if the index is valid
+          if (playbookIndex >= 0 && playbookIndex < playbooks.length) {
+            // Set the selected playbook ID - make sure it's selected from the loaded playbooks
+            setSelectedPlaybookId(playbooks[playbookIndex].id);
+          } else {
+            // If invalid index, default to the first playbook
+            setSelectedPlaybookId(playbooks[0].id);
+          }
+        } else if (playbooks.length > 0) {
+          // If no parameter or invalid parameter, set the first playbook as default
+          setSelectedPlaybookId(playbooks[0].id);
         }
         
         setLoading(false);
@@ -99,13 +116,25 @@ const ResourceHub = () => {
 
   // Load the selected playbook structure and content
   useEffect(() => {
-    if (!selectedPlaybookId) return;
+    if (!selectedPlaybookId || playbooks.length === 0) return;
 
     const loadPlaybook = async () => {
       setLoading(true);
       try {
         // Find the selected playbook info
         const selected = playbooks.find(p => p.id === selectedPlaybookId);
+        
+        // Check if the selected playbook exists
+        if (!selected) {
+          console.error('Selected playbook not found:', selectedPlaybookId);
+          // Fallback to the first playbook if the selected one doesn't exist
+          if (playbooks.length > 0) {
+            setSelectedPlaybookId(playbooks[0].id);
+          }
+          setLoading(false);
+          return;
+        }
+        
         setCurrentPlaybook(selected);
         
         // Load structure and content files
@@ -135,6 +164,12 @@ const ResourceHub = () => {
   // Handle playbook selection change
   const handlePlaybookChange = (event) => {
     setSelectedPlaybookId(event.target.value);
+    
+    // Update URL parameter when playbook is changed manually
+    const newPlaybookIndex = playbooks.findIndex(p => p.id === event.target.value) + 1;
+    const url = new URL(window.location);
+    url.searchParams.set('p', newPlaybookIndex.toString());
+    window.history.pushState({}, '', url);
   };
 
   // Navigate to next page with animation
