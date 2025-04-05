@@ -1,0 +1,318 @@
+{
+    "id": "b2b-saas-india-playbook",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Understanding the Indian B2B SaaS Landscape",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "marketOpportunityCallout"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "marketSizeStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "indiaUniqueFactors"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyMarketChallenges"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "competitiveLandscapeTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "competitorCategories"
+          }
+        ]
+      },
+      {
+        "id": "indian-b2b-buyer",
+        "title": "The Indian B2B SaaS Buyer: Behaviors and Expectations",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "buyerTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "buyerDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "buyerPersonasTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBuyerPersonas"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "decisionProcessTitle"
+          },
+          {
+            "type": "process",
+            "contentRef": "buyerJourneyProcess"
+          },
+          {
+            "type": "callout",
+            "contentRef": "culturalNuancesCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "buyingFactors"
+          }
+        ]
+      },
+      {
+        "id": "positioning-strategy",
+        "title": "Positioning Your SaaS for the Indian Market",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "positioningTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "positioningDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "positioningFramework"
+          },
+          {
+            "type": "callout",
+            "contentRef": "valuePropositionCallout"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "competitivePositioningTable"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "localizationTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "localizationElements"
+          },
+          {
+            "type": "quote",
+            "contentRef": "positioningQuote"
+          }
+        ]
+      },
+      {
+        "id": "go-to-market",
+        "title": "Go-to-Market Strategy for Indian B2B SaaS",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "gtmTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "gtmDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "channelStrategyTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "marketingChannels"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentStrategyTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "contentTypes"
+          },
+          {
+            "type": "callout",
+            "contentRef": "leadGenCallout"
+          },
+          {
+            "type": "steps",
+            "contentRef": "gtmImplementation"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "budgetScenarios"
+          }
+        ]
+      },
+      {
+        "id": "sales-approach",
+        "title": "Sales Process and Techniques for Indian B2B",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "salesTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "salesDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "salesProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "objectionHandlingTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "commonObjections"
+          },
+          {
+            "type": "callout",
+            "contentRef": "relationshipBuildingCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salesToolsTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "essentialSalesTools"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "multiTierApproach"
+          }
+        ]
+      },
+      {
+        "id": "pricing-strategy",
+        "title": "Pricing and Packaging for the Indian Market",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "pricingTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "pricingDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "pricingModelsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "effectivePricingModels"
+          },
+          {
+            "type": "callout",
+            "contentRef": "pricingSensitivityCallout"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "pricingTiersComparison"
+          },
+          {
+            "type": "steps",
+            "contentRef": "pricingStrategy"
+          },
+          {
+            "type": "quote",
+            "contentRef": "pricingQuote"
+          }
+        ]
+      },
+      {
+        "id": "retention-strategy",
+        "title": "Customer Success and Retention in Indian B2B",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "retentionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "retentionDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "onboardingTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "onboardingProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "customSuccessTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "successMetrics"
+          },
+          {
+            "type": "callout",
+            "contentRef": "supportModelCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "retentionStrategies"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      },
+      {
+        "id": "support-my-work",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "additionalResourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "relatedResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalMessage"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }

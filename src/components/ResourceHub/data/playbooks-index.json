@@ -9,6 +9,17 @@
     "category": "Product Marketing",
     "level": "Intermediate",
     "estimatedTime": "40 minutes"
+  },
+  {
+    "id": "b2b-saas-india-playbook",
+    "title": "Selling B2B SaaS Products in India's Competitive Market",
+    "subtitle": "A comprehensive framework for successfully positioning, selling, and retaining B2B SaaS customers in India",
+    "description": "Master the unique challenges of India's B2B SaaS landscape with this actionable playbook covering market entry, positioning, pricing, sales strategies, and customer success practices tailored specifically for the Indian business environment.",
+    "structureFile": "b2b-saas-india-playbook-structure.json",
+    "contentFile": "b2b-saas-india-playbook-content.json",
+    "category": "Sales & Marketing Strategy",
+    "level": "Advanced",
+    "estimatedTime": "40 minutes"
   }
   
 ]
