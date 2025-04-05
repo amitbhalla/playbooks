@@ -40,7 +40,7 @@
 /* Base container styles */
 .mobile-page-container {
   width: 100%;
-  padding-top: var(--navbar-height);
+  padding-top: 0;
   min-height: calc(100vh - var(--navbar-height));
   background-color: #f9fafb;
   overflow-x: hidden;
@@ -118,7 +118,13 @@
 
 /* Page header styles */
 .mobile-page-header {
+  padding: var(--page-padding);
+  padding-top: calc(var(--navbar-height) + 24px);
   margin-bottom: 24px;
+  background-color: #f9fafb;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .mobile-page-title {

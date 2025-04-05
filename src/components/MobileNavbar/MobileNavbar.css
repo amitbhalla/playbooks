@@ -5,7 +5,7 @@
 :root {
   --navbar-height: 60px;
   --navbar-bg: #ffffff;
-  --navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --navbar-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   --navbar-border: #eaeaea;
   --navbar-text: #333333;
   --navbar-brand: #2563eb;
@@ -13,11 +13,10 @@
   --navbar-hover-bg: #f5f7fa;
   --menu-width: 280px;
   --menu-bg: #ffffff;
-  --menu-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  --menu-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   --item-border: #eaeaea;
   --icon-size: 16px;
   --transition-speed: 0.3s;
-  --overlay-bg: rgba(0, 0, 0, 0.4);
 }
 
 /* Main navbar container */
@@ -47,12 +46,15 @@
   align-items: center;
   padding: 0 16px;
   height: 100%;
+  overflow: visible;
+  width: 100%;
 }
 
 .navbar-mobile-brand {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
+  width: 70%; /* Limit width to leave space for menu button */
 }
 
 .navbar-mobile-logo {
@@ -65,14 +67,16 @@
   font-size: 16px;
   font-weight: 600;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 200px;
+  width: 100%;
   color: var(--navbar-text);
   display: flex;
   align-items: center;
   cursor: pointer;
+  line-height: 1.3;
+  padding: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar-mobile-dropdown-icon {
@@ -96,21 +100,38 @@
 /* Playbook selector dropdown */
 .playbook-selector-dropdown {
   position: absolute;
-  top: var(--navbar-height);
+  top: calc(var(--navbar-height) - 1px);
   left: 0;
   right: 0;
   background-color: var(--navbar-bg);
-  border-bottom: 1px solid var(--navbar-border);
-  box-shadow: var(--navbar-shadow);
+  border-bottom: 1px solid var(--item-border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   z-index: 999;
-  max-height: 60vh;
+  max-height: 70vh;
   overflow-y: auto;
-  animation: slideDown 0.3s ease;
+  animation: slideDown 0.2s ease-out;
 }
 
 .playbook-selector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 16px;
   border-bottom: 1px solid var(--item-border);
+}
+
+.playbook-selector-close {
+  background: none;
+  border: none;
+  color: var(--navbar-text);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.playbook-selector-close:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .playbook-selector-header h2 {
@@ -133,20 +154,37 @@
   border-bottom: 1px solid var(--item-border);
   cursor: pointer;
   transition: background-color var(--transition-speed);
+  position: relative;
 }
 
 .playbook-selector-item:last-child {
   border-bottom: none;
 }
 
-.playbook-selector-item:active {
+.playbook-selector-item:active,
+.playbook-selector-item:hover {
   background-color: var(--navbar-hover-bg);
 }
 
 .playbook-selector-item.active {
-  background-color: rgba(37, 99, 235, 0.08);
-  color: var(--navbar-active);
-  font-weight: 500;
+  background-color: var(--navbar-active-bg);
+}
+
+.playbook-selector-active {
+  position: absolute;
+  right: 16px;
+  color: var(--primary-blue);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .playbook-selector-icon {
@@ -159,36 +197,26 @@
   flex: 1;
 }
 
-/* Menu overlay */
-.navbar-mobile-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
-  cursor: pointer;
-}
+/* Removed overlay styles as requested */
 
 /* Side menu */
 .navbar-mobile-menu {
   position: fixed;
   top: 0;
-  right: -var(--menu-width);
+  right: 0; /* Position at the edge of the screen */
   width: var(--menu-width);
   height: 100vh;
   background-color: var(--menu-bg);
   box-shadow: var(--menu-shadow);
-  z-index: 1001;
+  z-index: 1000;
   overflow-y: auto;
   transition: transform var(--transition-speed);
-  transform: translateX(0); /* Ensure it's off-screen by default */
+  transform: translateX(100%); /* Default position is off-screen to the right */
+  will-change: transform; /* Optimize for animations */
 }
 
 .navbar-mobile-menu.open {
-  transform: translateX(-100%); /* Move into view when open */
+  transform: translateX(0); /* Simply slide in, no negative values */
 }
 
 .navbar-mobile-menu-header {

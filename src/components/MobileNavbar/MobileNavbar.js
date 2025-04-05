@@ -1,5 +1,5 @@
 // File: src/components/MobileNavbar/MobileNavbar.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faBars, 
@@ -8,7 +8,8 @@ import {
   faChevronUp, 
   faBook, 
   faArrowLeft, 
-  faSearch 
+  faSearch,
+  faChevronRight 
 } from '@fortawesome/free-solid-svg-icons';
 import './MobileNavbar.css';
 
@@ -19,63 +20,73 @@ const MobileNavbar = ({
   handlePlaybookChange,
   selectedPlaybookId
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [playbookSelectorOpen, setPlaybookSelectorOpen] = useState(false);
+  // References to detect clicks outside elements
+  const menuRef = useRef(null);
+  const menuButtonRef = useRef(null);
+  const dropdownRef = useRef(null);
+  const dropdownButtonRef = useRef(null);
+  
+  // State for UI components
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Force the menu to close on route changes
-  useEffect(() => {
-    // Ensure menu is closed initially
-    setIsOpen(false);
-    
-    // Add escape key listener
-    const handleEscKey = (event) => {
-      if (event.key === 'Escape') {
-        setIsOpen(false);
-        setPlaybookSelectorOpen(false);
-      }
-    };
-    
-    // Listen for route changes (URL changes) to close menu
-    const handleRouteChange = () => {
-      setIsOpen(false);
-      setPlaybookSelectorOpen(false);
-    };
-    
-    // Close dropdown when clicking outside
-    const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.navbar-mobile-menu') && 
-          !event.target.closest('.navbar-menu-button')) {
-        setIsOpen(false);
-      }
-      
-      if (playbookSelectorOpen && !event.target.closest('.playbook-selector-dropdown') &&
-          !event.target.closest('.navbar-mobile-title')) {
-        setPlaybookSelectorOpen(false);
-      }
-    };
-
-    window.addEventListener('popstate', handleRouteChange);
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('keydown', handleEscKey);
-    
-    return () => {
-      window.removeEventListener('popstate', handleRouteChange);
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscKey);
-    };
-  }, [isOpen, playbookSelectorOpen, selectedPlaybookId]);
-
-  // Handle playbook selection
+  // Close the menu when a playbook is selected
   const onPlaybookSelect = (id) => {
     handlePlaybookChange(id);
-    setPlaybookSelectorOpen(false);
-    setIsOpen(false);
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
   };
 
-  // Toggle playbook selector
-  const togglePlaybookSelector = () => {
-    setPlaybookSelectorOpen(!playbookSelectorOpen);
-  };
+  // Close everything when pressing Escape
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+        setIsDropdownOpen(false);
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscKey);
+    return () => document.removeEventListener('keydown', handleEscKey);
+  }, []);
+
+  // Close menus when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Close menu if click is outside menu and menu button
+      if (
+        isMenuOpen && 
+        menuRef.current && 
+        !menuRef.current.contains(event.target) &&
+        menuButtonRef.current &&
+        !menuButtonRef.current.contains(event.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+      
+      // Close dropdown if click is outside dropdown and dropdown button
+      if (
+        isDropdownOpen && 
+        dropdownRef.current && 
+        !dropdownRef.current.contains(event.target) &&
+        dropdownButtonRef.current &&
+        !dropdownButtonRef.current.contains(event.target)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+    
+    // Add listener only if either menu is open
+    if (isMenuOpen || isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isMenuOpen, isDropdownOpen]);
 
   return (
     <nav className="navbar-mobile">
@@ -84,37 +95,41 @@ const MobileNavbar = ({
         <div className="navbar-mobile-top">
           <div className="navbar-mobile-brand">
             <FontAwesomeIcon icon={faBook} className="navbar-mobile-logo" />
-            <h1 className="navbar-mobile-title" onClick={togglePlaybookSelector}>
+            <h1 
+              className="navbar-mobile-title" 
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              ref={dropdownButtonRef}
+            >
               {currentPlaybook?.title || title}
               <FontAwesomeIcon 
-                icon={playbookSelectorOpen ? faChevronUp : faChevronDown} 
+                icon={isDropdownOpen ? faChevronUp : faChevronDown} 
                 className="navbar-mobile-dropdown-icon" 
               />
             </h1>
           </div>
           <button 
             className="navbar-menu-button" 
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation menu"
+            ref={menuButtonRef}
           >
-            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+            <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
           </button>
         </div>
         
-        {/* Menu overlay (only visible when menu is open) */}
-        {isOpen && (
-          <div 
-            className="navbar-mobile-overlay" 
-            onClick={() => setIsOpen(false)}
-            aria-hidden="true"
-          ></div>
-        )}
+        {/* No overlay - removed as requested */}
 
         {/* Playbook selector dropdown */}
-        {playbookSelectorOpen && (
-          <div className="playbook-selector-dropdown">
+        {isDropdownOpen && (
+          <div className="playbook-selector-dropdown" ref={dropdownRef}>
             <div className="playbook-selector-header">
               <h2>Select a Playbook</h2>
+              <button 
+                className="playbook-selector-close" 
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
             </div>
             <ul className="playbook-selector-list">
               {playbooks.map((playbook) => (
@@ -129,6 +144,11 @@ const MobileNavbar = ({
                   <span className="playbook-selector-title">
                     {playbook.title}
                   </span>
+                  {playbook.id === selectedPlaybookId && (
+                    <span className="playbook-selector-active">
+                      <FontAwesomeIcon icon={faChevronRight} />
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -136,11 +156,14 @@ const MobileNavbar = ({
         )}
 
         {/* Side menu */}
-        <div className={`navbar-mobile-menu ${isOpen ? 'open' : ''}`}>
+        <div 
+          className={`navbar-mobile-menu ${isMenuOpen ? 'open' : ''}`}
+          ref={menuRef}
+        >
           <div className="navbar-mobile-menu-header">
             <button 
               className="navbar-mobile-close-button" 
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsMenuOpen(false)}
             >
               <FontAwesomeIcon icon={faTimes} />
             </button>
@@ -168,7 +191,7 @@ const MobileNavbar = ({
                 <li 
                   className="navbar-mobile-menu-item"
                   onClick={() => {
-                    setIsOpen(false);
+                    setIsMenuOpen(false);
                     // Handle search functionality here
                     alert('Search functionality coming soon!');
                   }}
@@ -179,7 +202,7 @@ const MobileNavbar = ({
                 <li 
                   className="navbar-mobile-menu-item"
                   onClick={() => {
-                    setIsOpen(false);
+                    setIsMenuOpen(false);
                     window.location.href = '/';
                   }}
                 >

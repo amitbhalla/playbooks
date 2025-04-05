@@ -24,7 +24,8 @@ import {
   faChartBar,
   faServer,
   faRobot,
-  faSpinner
+  faSpinner,
+  
 } from '@fortawesome/free-solid-svg-icons';
 import Hammer from 'hammerjs';
 import './MobilePageContent.css';

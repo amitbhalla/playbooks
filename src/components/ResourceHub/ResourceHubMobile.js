@@ -5,8 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faChevronLeft, 
-  faChevronRight, 
-  faCheck
+  faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 import MobileNavbar from '../MobileNavbar/MobileNavbar';
 import MobilePageContent from '../MobilePageContent/MobilePageContent';
@@ -189,14 +188,8 @@ const ResourceHubMobile = () => {
       // Update URL parameter when page is changed manually
       const url = new URL(window.location);
       url.searchParams.set('c', (pageIndex + 1).toString()); // Store as 1-based index in URL
+      url.searchParams.set('c', (pageIndex + 1).toString());
       window.history.pushState({}, '', url);
-      
-      // Determine direction for transition
-      if (pageIndex > currentPage) {
-        handlePageTransition('next');
-      } else {
-        handlePageTransition('prev');
-      }
     }
   };
 
@@ -225,6 +218,26 @@ const ResourceHubMobile = () => {
         onPrevPage={prevPage}
         pageTransitionState={pageTransitionState}
       />
+      
+      {/* Support My Work Section */}
+      <div className="mobile-support-section">
+        <div className="mobile-support-content">
+          <div className="mobile-support-icon">☕</div>
+          <h2 className="mobile-support-title">Support My Work</h2>
+          <p className="mobile-support-text">
+            If you found these resources valuable, please consider supporting my work.
+            Your contribution helps me create more in-depth marketing resources.
+          </p>
+          <a 
+            href="https://www.buymeacoffee.com/amitbhalla" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mobile-support-button"
+          >
+            Buy Me A Coffee
+          </a>
+        </div>
+      </div>
       
       {/* Fixed Navigation Buttons */}
       {playbookStructure && !loading && (
