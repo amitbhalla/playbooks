@@ -542,7 +542,7 @@
       "salaryExpectationsTitle": "2025 Entry-Level Marketing Salary Guide (Annual CTC)",
       "salaryComparison": {
         "title": "Salary Ranges by Role and Location",
-        "columns": ["Role", "Tier-1 Cities", "Tier-2 Cities", "Remote"],
+        "columns": ["Role", "Tier-1 Cities", "Tier-2 Cities"],
         "rows": [
           {
             "feature": "Digital Marketing Executive",

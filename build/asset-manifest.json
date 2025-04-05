@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/playbooks/static/css/main.2eb86264.css",
-    "main.js": "/playbooks/static/js/main.675664ac.js",
-    "static/js/20.4c11494f.chunk.js": "/playbooks/static/js/20.4c11494f.chunk.js",
+    "main.css": "/playbooks/static/css/main.b2957f10.css",
+    "main.js": "/playbooks/static/js/main.6eb731b2.js",
+    "static/js/20.75bba6c5.chunk.js": "/playbooks/static/js/20.75bba6c5.chunk.js",
     "static/js/429.5c6bea55.chunk.js": "/playbooks/static/js/429.5c6bea55.chunk.js",
     "static/js/661.52536656.chunk.js": "/playbooks/static/js/661.52536656.chunk.js",
     "static/js/564.b6a4906a.chunk.js": "/playbooks/static/js/564.b6a4906a.chunk.js",
     "static/js/976.7b86bc84.chunk.js": "/playbooks/static/js/976.7b86bc84.chunk.js",
     "static/js/877.ea30aea8.chunk.js": "/playbooks/static/js/877.ea30aea8.chunk.js",
     "static/js/605.9e22d485.chunk.js": "/playbooks/static/js/605.9e22d485.chunk.js",
+    "static/js/165.9336ca8f.chunk.js": "/playbooks/static/js/165.9336ca8f.chunk.js",
+    "static/js/925.7994b1d4.chunk.js": "/playbooks/static/js/925.7994b1d4.chunk.js",
     "static/js/982.7990c2e8.chunk.js": "/playbooks/static/js/982.7990c2e8.chunk.js",
     "static/js/610.ddcf57d6.chunk.js": "/playbooks/static/js/610.ddcf57d6.chunk.js",
     "static/js/960.ee081521.chunk.js": "/playbooks/static/js/960.ee081521.chunk.js",
@@ -28,11 +30,11 @@
     "static/js/611.4525285f.chunk.js": "/playbooks/static/js/611.4525285f.chunk.js",
     "static/js/523.1e5cd485.chunk.js": "/playbooks/static/js/523.1e5cd485.chunk.js",
     "index.html": "/playbooks/index.html",
-    "main.2eb86264.css.map": "/playbooks/static/css/main.2eb86264.css.map",
-    "main.675664ac.js.map": "/playbooks/static/js/main.675664ac.js.map"
+    "main.b2957f10.css.map": "/playbooks/static/css/main.b2957f10.css.map",
+    "main.6eb731b2.js.map": "/playbooks/static/js/main.6eb731b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eb86264.css",
-    "static/js/main.675664ac.js"
+    "static/css/main.b2957f10.css",
+    "static/js/main.6eb731b2.js"
   ]
 }
