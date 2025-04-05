@@ -1,0 +1,370 @@
+{
+    "id": "talent-attraction-framework",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Introduction: Talent Attraction in APAC",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "talentShortageStats"
+          },
+          {
+            "type": "callout",
+            "contentRef": "frameworkPurpose"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "apacChallenges"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          },
+          {
+            "type": "callout",
+            "contentRef": "howToUseGuide"
+          }
+        ]
+      },
+      {
+        "id": "apac-landscape",
+        "title": "The APAC Talent Landscape: Regional Insights",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "landscapeTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "landscapeOverview"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "regionalDynamics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "talentTrendsTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "emergingTrends"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "industryAnalysisTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "industryCompetition"
+          },
+          {
+            "type": "callout",
+            "contentRef": "dataSourcesCallout"
+          }
+        ]
+      },
+      {
+        "id": "talent-personas",
+        "title": "Talent Personas & Motivation Drivers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "personasTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "personasDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "personaCreationProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "corePersonasTitle"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "talentPersonas"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "motivationDriversTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "primaryMotivators"
+          },
+          {
+            "type": "callout",
+            "contentRef": "generationalInsightsCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "culturalNuancesTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "culturalFactors"
+          }
+        ]
+      },
+      {
+        "id": "strategic-framework",
+        "title": "Strategic Talent Attraction Framework",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "frameworkTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "frameworkDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "strategicFrameworkProcess"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "employerBrandingTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "employerBrandingDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "brandingDevelopmentSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "channelStrategyTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "channelEffectiveness"
+          },
+          {
+            "type": "callout",
+            "contentRef": "budgetingCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentStrategyTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "contentPillars"
+          }
+        ]
+      },
+      {
+        "id": "tactical-implementation",
+        "title": "Tactical Implementation Guide",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "tacticalTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "tacticalDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "digitalCampaignsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "digitalCampaignTactics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "socialRecruitingTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "socialPlatformTactics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "eventsEngagementTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "eventsTactics"
+          },
+          {
+            "type": "callout",
+            "contentRef": "employeeAdvocacyCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "candidateExperienceTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "candidateJourneyOptimization"
+          },
+          {
+            "type": "callout",
+            "contentRef": "automationToolsCallout"
+          }
+        ]
+      },
+      {
+        "id": "regional-customization",
+        "title": "Regional Customization Across APAC",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "customizationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "customizationDescription"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "regionalCustomization"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "localTeamsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "localTeamsDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "organisationModels"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "localizationStrategyTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "localizationSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "regulatoryCallout"
+          },
+          {
+            "type": "quote",
+            "contentRef": "regionalExpertQuote"
+          }
+        ]
+      },
+      {
+        "id": "attribution-roi",
+        "title": "Attribution & ROI: Measuring Talent Acquisition Success",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "attributionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "attributionDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "metricsFrameworkTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "keyMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "attributionModelsTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "attributionModelsComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "dashboardTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "dashboardDescription"
+          },
+          {
+            "type": "cards",
+            "contentRef": "dashboardElements"
+          },
+          {
+            "type": "callout",
+            "contentRef": "techStackCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "costOptimizationTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "costOptimizationSteps"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "optimizationStat"
+          }
+        ]
+      },
+      {
+        "id": "support-resources",
+        "title": "Support & Additional Resources",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "conclusionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionDescription"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "implementationChecklist"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalWords"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }

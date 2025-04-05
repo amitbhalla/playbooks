@@ -52,6 +52,15 @@
     "category": "Analytics & Measurement",
     "level": "Intermediate",
     "estimatedTime": "30 minutes"
+  },{
+    "id": "talent-attraction-framework",
+    "title": "Talent Attraction Framework for Asia Pacific Market",
+    "subtitle": "A comprehensive strategy for recruiting marketing and talent acquisition teams to attract top talent across APAC",
+    "description": "This sophisticated framework provides a detailed roadmap for building persona-driven talent attraction strategies across diverse APAC markets, with strategic and tactical approaches for implementation, measurement, and optimization.",
+    "structureFile": "talent-attraction-framework-structure.json",
+    "contentFile": "talent-attraction-framework-content.json",
+    "category": "Talent Acquisition",
+    "level": "Advanced",
+    "estimatedTime": "45 minutes"
   }
-  
 ]
