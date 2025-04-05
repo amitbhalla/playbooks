@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/playbooks/static/css/main.b2957f10.css",
-    "main.js": "/playbooks/static/js/main.b226dd3f.js",
+    "main.css": "/playbooks/static/css/main.96c90d6c.css",
+    "main.js": "/playbooks/static/js/main.51c0c74b.js",
     "static/js/20.75bba6c5.chunk.js": "/playbooks/static/js/20.75bba6c5.chunk.js",
     "static/js/429.5c6bea55.chunk.js": "/playbooks/static/js/429.5c6bea55.chunk.js",
     "static/js/661.52536656.chunk.js": "/playbooks/static/js/661.52536656.chunk.js",
@@ -30,11 +30,11 @@
     "static/js/611.4525285f.chunk.js": "/playbooks/static/js/611.4525285f.chunk.js",
     "static/js/523.1e5cd485.chunk.js": "/playbooks/static/js/523.1e5cd485.chunk.js",
     "index.html": "/playbooks/index.html",
-    "main.b2957f10.css.map": "/playbooks/static/css/main.b2957f10.css.map",
-    "main.b226dd3f.js.map": "/playbooks/static/js/main.b226dd3f.js.map"
+    "main.96c90d6c.css.map": "/playbooks/static/css/main.96c90d6c.css.map",
+    "main.51c0c74b.js.map": "/playbooks/static/js/main.51c0c74b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2957f10.css",
-    "static/js/main.b226dd3f.js"
+    "static/css/main.96c90d6c.css",
+    "static/js/main.51c0c74b.js"
   ]
 }
