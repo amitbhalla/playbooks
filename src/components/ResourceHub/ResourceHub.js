@@ -143,7 +143,26 @@ const ResourceHub = () => {
         
         setPlaybookStructure(structureResponse.default);
         setPlaybookContent(contentResponse.default);
-        setCurrentPage(0);
+        
+        // Check URL parameters for a specific content page
+        const urlParams = new URLSearchParams(window.location.search);
+        const contentPageParam = urlParams.get('c');
+        
+        if (contentPageParam && !isNaN(parseInt(contentPageParam)) && structureResponse.default.pages) {
+          const contentPageIndex = parseInt(contentPageParam) - 1; // Convert from 1-based to 0-based
+          
+          // Verify the requested page exists
+          if (contentPageIndex >= 0 && contentPageIndex < structureResponse.default.pages.length) {
+            setCurrentPage(contentPageIndex);
+          } else {
+            // If invalid page index, default to first page
+            setCurrentPage(0);
+          }
+        } else {
+          // If no parameter or invalid parameter, set to first page
+          setCurrentPage(0);
+        }
+        
         setLoading(false);
       } catch (error) {
         console.error('Error loading playbook data:', error);
@@ -169,6 +188,8 @@ const ResourceHub = () => {
     const newPlaybookIndex = playbooks.findIndex(p => p.id === event.target.value) + 1;
     const url = new URL(window.location);
     url.searchParams.set('p', newPlaybookIndex.toString());
+    // Remove the content page parameter when changing playbooks
+    url.searchParams.delete('c');
     window.history.pushState({}, '', url);
   };
 
@@ -177,6 +198,12 @@ const ResourceHub = () => {
     if (playbookStructure && currentPage < playbookStructure.pages.length - 1) {
       setDirection('next');
       setAnimating(true);
+      
+      // Update the URL parameter for content page
+      const url = new URL(window.location);
+      url.searchParams.set('c', (currentPage + 2).toString()); // +2 because we're moving to next page and using 1-based indexing
+      window.history.pushState({}, '', url);
+      
       setTimeout(() => {
         setCurrentPage(currentPage + 1);
         setTimeout(() => {
@@ -191,6 +218,12 @@ const ResourceHub = () => {
     if (currentPage > 0) {
       setDirection('prev');
       setAnimating(true);
+      
+      // Update the URL parameter for content page
+      const url = new URL(window.location);
+      url.searchParams.set('c', currentPage.toString()); // currentPage is 0-based, but we're moving back, so we need current index in 1-based form
+      window.history.pushState({}, '', url);
+      
       setTimeout(() => {
         setCurrentPage(currentPage - 1);
         setTimeout(() => {
@@ -205,6 +238,12 @@ const ResourceHub = () => {
     if (pageIndex !== currentPage) {
       setDirection(pageIndex > currentPage ? 'next' : 'prev');
       setAnimating(true);
+      
+      // Update URL parameter when page is changed manually
+      const url = new URL(window.location);
+      url.searchParams.set('c', (pageIndex + 1).toString()); // Store as 1-based index in URL
+      window.history.pushState({}, '', url);
+      
       setTimeout(() => {
         setCurrentPage(pageIndex);
         setTimeout(() => {
