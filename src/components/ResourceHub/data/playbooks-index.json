@@ -1,5 +1,16 @@
 [
   {
+    "id": "india-marketing-career-guide",
+    "title": "Marketing Career Guide: India Edition (2025)",
+    "subtitle": "The definitive roadmap to starting and accelerating your marketing career in India",
+    "description": "A comprehensive, India-specific guide for graduates and young professionals looking to break into marketing. Covers the unique Indian marketing landscape, in-demand skills, educational pathways, entry-level opportunities, and career advancement strategies tailored to the Indian context.",
+    "structureFile": "india-marketing-career-guide-structure.json",
+    "contentFile": "india-marketing-career-guide-content.json",
+    "category": "Career Development",
+    "level": "Beginner",
+    "estimatedTime": "30 minutes"
+  },
+  {
     "id": "b2b-product-marketing-guide",
     "title": "2025 B2B Product Marketing Guide",
     "subtitle": "Actionable frameworks for creating differentiated positioning, compelling messaging, and effective go-to-market strategies",

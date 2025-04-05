@@ -1,0 +1,346 @@
+{
+    "id": "india-marketing-career-guide",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Marketing Careers in India: 2025 Landscape",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "careerOpportunityCallout"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "marketingGrowthStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "whyMarketingIndia"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyAdvantages"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "realitiesVsMyths"
+          }
+        ]
+      },
+      {
+        "id": "indian-marketing-landscape",
+        "title": "Understanding the Indian Marketing Ecosystem",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "ecosystemTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "ecosystemDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "digitalVsTraditionalTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "digitalVsTraditionalComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "keyIndustriesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "topIndustries"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "regionalDifferencesTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "regionalOpportunities"
+          },
+          {
+            "type": "callout",
+            "contentRef": "tierTwoCallout"
+          }
+        ]
+      },
+      {
+        "id": "education-certification",
+        "title": "Educational Pathways for Indian Marketers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "educationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "educationDescription"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "educationOptions"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "certificationTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "valuableCertifications"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "selfLearningTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "selfLearningResources"
+          },
+          {
+            "type": "callout",
+            "contentRef": "educationRoiCallout"
+          }
+        ]
+      },
+      {
+        "id": "essential-skills",
+        "title": "Developing India-Specific Marketing Skills",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "skillsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "skillsDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "technicalSkillsTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "technicalSkills"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "softSkillsTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "softSkills"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "culturalCompetenciesTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "culturalCompetenciesDescription"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "culturalInsights"
+          },
+          {
+            "type": "callout",
+            "contentRef": "languageCallout"
+          }
+        ]
+      },
+      {
+        "id": "entry-level-positions",
+        "title": "Breaking Into Marketing: Entry-Level Opportunities",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "entryLevelTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "entryLevelDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "commonRolesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "beginnerRoles"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salaryExpectationsTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "salaryComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "internshipsTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "internshipStrategy"
+          },
+          {
+            "type": "callout",
+            "contentRef": "startupVsCorporateCallout"
+          },
+          {
+            "type": "quote",
+            "contentRef": "juniorMarketerQuote"
+          }
+        ]
+      },
+      {
+        "id": "personal-branding",
+        "title": "Building Your Marketing Personal Brand in India",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "personalBrandingTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "personalBrandingDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resumeTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "resumeStrategy"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "onlinePresenceTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "onlinePresenceTactics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "networkingTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "networkingApproaches"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "portfolioTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "portfolioCreation"
+          },
+          {
+            "type": "callout",
+            "contentRef": "personalBrandingCallout"
+          }
+        ]
+      },
+      {
+        "id": "career-roadmap",
+        "title": "Marketing Career Advancement Roadmap",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "careerRoadmapTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "careerRoadmapDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "careerPathTimeline"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "skillProgressionTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "skillsProgression"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salaryProgressionTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "salaryProgression"
+          },
+          {
+            "type": "callout",
+            "contentRef": "jobSwitchingCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "actionPlanTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "firstYearActionPlan"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      },
+      {
+        "id": "thank-you",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalMessage"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }
