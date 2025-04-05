@@ -20,6 +20,17 @@
     "category": "Sales & Marketing Strategy",
     "level": "Advanced",
     "estimatedTime": "40 minutes"
+  },
+  {
+    "id": "saas-b2b-marketing-plan",
+    "title": "SaaS B2B Marketing Plan Template to Submit to your CXO",
+    "subtitle": "A comprehensive, executive-ready framework for building a strategic B2B SaaS marketing plan",
+    "description": "Create a professional, data-driven marketing plan that secures executive buy-in with this step-by-step template covering market analysis, buyer personas, channel strategy, budget allocation, and performance measurement.",
+    "structureFile": "saas-b2b-marketing-structure.json",
+    "contentFile": "saas-b2b-marketing-content.json",
+    "category": "B2B Marketing Strategy",
+    "level": "Intermediate",
+    "estimatedTime": "30 minutes"
   }
   
 ]
