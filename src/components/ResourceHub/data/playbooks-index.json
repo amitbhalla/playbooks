@@ -31,6 +31,16 @@
     "category": "B2B Marketing Strategy",
     "level": "Intermediate",
     "estimatedTime": "30 minutes"
+  },{
+    "id": "data-attribution-playbook",
+    "title": "Data-Driven Attribution in Marketing",
+    "subtitle": "A definitive guide to proving marketing's impact on B2B sales and revenue",
+    "description": "Learn how to implement effective attribution systems that demonstrate marketing's true contribution to the sales pipeline and revenue, create sales-marketing alignment, and optimize marketing investments for maximum ROI.",
+    "structureFile": "data-attribution-playbook-structure.json",
+    "contentFile": "data-attribution-playbook-content.json",
+    "category": "Analytics & Measurement",
+    "level": "Intermediate",
+    "estimatedTime": "30 minutes"
   }
   
 ]

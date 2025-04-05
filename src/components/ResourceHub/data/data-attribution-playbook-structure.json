@@ -1,0 +1,350 @@
+{
+    "id": "data-attribution-playbook",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Proving Marketing's Impact on Sales: Introduction",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "attributionCrisisCallout"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "marketingCreditStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "businessImpact"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          },
+          {
+            "type": "callout",
+            "contentRef": "playbookGuide"
+          }
+        ]
+      },
+      {
+        "id": "attribution-fundamentals",
+        "title": "Attribution Fundamentals for B2B Marketers",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "fundamentalsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "fundamentalsDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "attributionDefinitionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "attributionDefinition"
+          },
+          {
+            "type": "callout",
+            "contentRef": "b2bVsB2cCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "journeyMappingTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "journeyMappingSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "touchpointDefinitionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "touchpointDefinition"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "touchpointComparison"
+          }
+        ]
+      },
+      {
+        "id": "data-collection",
+        "title": "Data Collection: The Foundation of Attribution",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "dataCollectionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "dataCollectionDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "dataQualityCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "essentialDataTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "essentialDataSources"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "trackingSetupTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "trackingSetupSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "identificationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "identificationDescription"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "identificationTechniques"
+          },
+          {
+            "type": "callout",
+            "contentRef": "privacyCallout"
+          }
+        ]
+      },
+      {
+        "id": "attribution-models",
+        "title": "Choosing the Right Attribution Model for B2B",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "modelsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "modelsDescription"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "attributionModelsTabs"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "modelSelectionTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "modelSelectionSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "hybridModelCallout"
+          },
+          {
+            "type": "process",
+            "contentRef": "attributionImplementationProcess"
+          },
+          {
+            "type": "quote",
+            "contentRef": "expertQuote"
+          }
+        ]
+      },
+      {
+        "id": "technical-implementation",
+        "title": "Technical Implementation: Step-by-Step Guide",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "technicalTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "technicalDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "toolSelectionTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "toolComparison"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "implementationTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "implementationSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "noCodeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "validationTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "validationChecklist"
+          },
+          {
+            "type": "callout",
+            "contentRef": "consultantCallout"
+          }
+        ]
+      },
+      {
+        "id": "analysis-insights",
+        "title": "Extracting Actionable Insights from Attribution Data",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "analysisTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "analysisDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "keyMetricsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "insightExtractionTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "insightExtractionSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "commonPatternsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "commonPatterns"
+          },
+          {
+            "type": "callout",
+            "contentRef": "analysisPitfallsCallout"
+          },
+          {
+            "type": "process",
+            "contentRef": "optimizationProcess"
+          }
+        ]
+      },
+      {
+        "id": "reporting-alignment",
+        "title": "Reporting & Cross-Departmental Alignment",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "reportingTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "reportingDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "dashboardsTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "dashboardTypes"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "stakeholderTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "stakeholderNeeds"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "alignmentTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "alignmentSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "meetingTemplateCallout"
+          },
+          {
+            "type": "quote",
+            "contentRef": "cmoQuote"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "alignmentStat"
+          }
+        ]
+      },
+      {
+        "id": "thank-you",
+        "title": "Support My Work",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "thankYouTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "thankYouMessage"
+          },
+          {
+            "type": "coffeeCallout",
+            "contentRef": "coffeeCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "resourcesTitle"
+          },
+          {
+            "type": "cards",
+            "contentRef": "additionalResources"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "finalMessage"
+          },
+          {
+            "type": "quote",
+            "contentRef": "authorQuote"
+          }
+        ]
+      }
+    ]
+  }
