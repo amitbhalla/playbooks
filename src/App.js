@@ -1,6 +1,6 @@
 import React from 'react';
 import ResourceHub from './components/ResourceHub/ResourceHub';
-import ResourceHubMobile from './components/ResourceHub/ResourceHubMobile';
+import ResourceHubMobile from './components/mobile/ResourceHubMobile/ResourceHubMobile';
 import AdBanner from './components/AdBanner/AdBanner';
 import useViewport from './hooks/useViewport';
 import './App.css';

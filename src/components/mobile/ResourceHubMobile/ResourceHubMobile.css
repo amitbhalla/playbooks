@@ -1,0 +1,103 @@
+.resource-hub-mobile {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9fb;
+  color: var(--dark);
+  position: relative;
+}
+
+.mobile-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.mobile-loader {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(37, 99, 235, 0.2);
+  border-top-color: var(--primary-blue);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  margin-bottom: 1rem;
+}
+
+.mobile-loading p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Support section styling */
+.mobile-support-section {
+  padding: 2rem 1rem;
+  background-color: var(--lightest);
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+.mobile-support-container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-support-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: var(--darker);
+}
+
+.mobile-support-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  color: var(--gray-dark);
+}
+
+.mobile-support-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.mobile-support-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+}
+
+.mobile-footer {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  background-color: white;
+  margin-top: auto;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Define variables for colors if not already defined in the main CSS file */
+:root {
+  --primary-blue: #2563eb;
+  --dark: #111827;
+  --darker: #0f172a;
+  --gray: #6b7280;
+  --gray-dark: #4b5563;
+  --light: #f3f4f6;
+}

@@ -1,0 +1,48 @@
+.mobile-header {
+  padding: 16px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.mobile-header-logo {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+}
+
+.mobile-header-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.mobile-header-title:active {
+  opacity: 0.7;
+}
+
+.mobile-header-dropdown-icon {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}

@@ -48,9 +48,9 @@
 }
 
 .App-header-content {
-  width: 92%;
+  width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 1.8rem auto;
   position: relative;
   z-index: 1;
 }
@@ -98,6 +98,7 @@
   font-size: 1.5rem;
   margin: 0;
   letter-spacing: -0.5px;
+  color: white;
 }
 
 /* Mobile Main Content */

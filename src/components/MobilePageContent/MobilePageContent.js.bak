@@ -1,0 +1,417 @@
+// File: src/components/MobilePageContent/MobilePageContent.js
+import React, { useEffect, useRef, useState } from 'react';
+import Hammer from 'hammerjs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faSpinner, 
+  faChevronLeft, 
+  faChevronRight, 
+  faBookmark,
+  faShare,
+  faArrowUp,
+  faListUl,
+  faFont,
+  faCheck,
+  faLightbulb,
+  faInfoCircle,
+  faExclamationTriangle,
+  faStar,
+  faArrowRight,
+  faRocket,
+  faChartLine,
+  faLayerGroup,
+  faUsers,
+  faBullseye,
+  faBrain,
+  faCode,
+  faToolbox,
+  faSearch,
+  faUserPlus,
+  faComments,
+  faHandshake,
+  faShieldAlt,
+  faChartBar,
+  faServer,
+  faRobot
+} from '@fortawesome/free-solid-svg-icons';
+import './MobilePageContent.css';
+
+const MobilePageContent = ({ 
+  playbookStructure, 
+  playbookContent, 
+  currentPage, 
+  loading, 
+  onNextPage, 
+  onPrevPage,
+  pageTransitionState
+}) => {
+  const [fontSize, setFontSize] = useState('medium'); // font size preference
+  const [bookmarked, setBookmarked] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const contentRef = useRef(null);
+  const pageRef = useRef(null);
+
+  // Helper function to get content by reference
+  const getContent = (contentRef) => {
+    if (!contentRef || !playbookContent) return {};
+    return playbookContent[contentRef] || {};
+  };
+
+  // Icon mapping
+  const iconMap = {
+    'check': faCheck,
+    'lightbulb': faLightbulb,
+    'info': faInfoCircle,
+    'warning': faExclamationTriangle,
+    'star': faStar,
+    'arrow-right': faArrowRight,
+    'rocket': faRocket,
+    'chart-line': faChartLine,
+    'layer-group': faLayerGroup,
+    'users': faUsers,
+    'bullseye': faBullseye,
+    'brain': faBrain,
+    'code': faCode,
+    'toolbox': faToolbox,
+    'search': faSearch,
+    'user-plus': faUserPlus,
+    'comments': faComments,
+    'handshake': faHandshake,
+    'shield': faShieldAlt,
+    'chart-bar': faChartBar,
+    'server': faServer,
+    'robot': faRobot
+  };
+
+  // Setup swipe gestures for navigating between pages
+  useEffect(() => {
+    if (pageRef.current) {
+      const hammer = new Hammer(pageRef.current);
+      hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+      
+      hammer.on('swipeleft', () => {
+        if (currentPage < playbookStructure.pages.length - 1) {
+          onNextPage();
+        }
+      });
+      
+      hammer.on('swiperight', () => {
+        if (currentPage > 0) {
+          onPrevPage();
+        }
+      });
+      
+      return () => {
+        hammer.destroy();
+      };
+    }
+  }, [currentPage, playbookStructure, onNextPage, onPrevPage]);
+
+  // Handle scroll to show/hide navigation controls
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+      
+      // Hide controls when scrolling down, show when scrolling up
+      if (position > 100 && position > scrollPosition) {
+        setShowControls(false);
+      } else {
+        setShowControls(true);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPosition]);
+  
+  // Check if we have the current page structure available
+  const currentPageStructure = playbookStructure?.pages?.[currentPage] || null;
+  
+  // Check if the current page is bookmarked
+  useEffect(() => {
+    if (playbookStructure?.id && currentPage !== undefined) {
+      const storedBookmarks = JSON.parse(localStorage.getItem('playbook-bookmarks') || '[]');
+      const isBookmarked = storedBookmarks.some(
+        bookmark => bookmark.playbookId === playbookStructure.id && bookmark.page === currentPage
+      );
+      setBookmarked(isBookmarked);
+    }
+  }, [playbookStructure, currentPage]);
+
+  // Toggle bookmark status
+  const toggleBookmark = () => {
+    if (!playbookStructure?.id || !playbookStructure?.pages) return;
+    
+    setBookmarked(!bookmarked);
+    // Save bookmark to localStorage if needed
+    if (!bookmarked) {
+      // Store in localStorage
+      const bookmarks = JSON.parse(localStorage.getItem('playbook-bookmarks') || '[]');
+      const newBookmark = { 
+        playbookId: playbookStructure.id, 
+        page: currentPage,
+        title: currentPageStructure?.title || 'Untitled Page',
+        timestamp: new Date().toISOString()
+      };
+      bookmarks.push(newBookmark);
+      localStorage.setItem('playbook-bookmarks', JSON.stringify(bookmarks));
+    }
+  };
+
+  // Toggle font size
+  const changeFontSize = () => {
+    const sizes = ['small', 'medium', 'large'];
+    const currentIndex = sizes.indexOf(fontSize);
+    const nextIndex = (currentIndex + 1) % sizes.length;
+    setFontSize(sizes[nextIndex]);
+  };
+
+  // Handle sharing
+  const shareContent = () => {
+    if (!playbookStructure?.pages) return;
+    
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    params.set('c', currentPage + 1); // Set to 1-based index for the URL
+    url.search = params.toString();
+    
+    const pageTitle = currentPageStructure?.title || 'Playbook Section';
+    
+    if (navigator.share) {
+      navigator.share({
+        title: pageTitle,
+        text: `Check out this playbook section: ${pageTitle}`,
+        url: url.toString()
+      })
+      .catch(error => console.log('Error sharing:', error));
+    } else {
+      // Fallback for browsers without Web Share API
+      navigator.clipboard.writeText(url.toString())
+        .then(() => alert('Link copied to clipboard!'))
+        .catch(err => console.error('Could not copy link: ', err));
+    }
+  };
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Scroll to top when changing pages
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+    }
+  }, [currentPage]);
+
+  // Render the correct icon based on the type
+  const renderIcon = (iconType) => {
+    return <FontAwesomeIcon icon={iconMap[iconType] || faLightbulb} />;
+  };
+
+  // If loading, show loading spinner
+  // Show loading state
+  if (loading || !playbookStructure || !playbookContent) {
+    return (
+      <div className="mobile-page-loading">
+        <div className="loading-spinner">
+          <FontAwesomeIcon icon={faSpinner} spin className="mobile-loading-icon" />
+        </div>
+        <span>Loading your content...</span>
+      </div>
+    );
+  }
+
+  // Render page content
+  return (
+    <div 
+      className={`mobile-page-container font-${fontSize} ${pageTransitionState || ''}`} 
+      ref={contentRef}
+    >
+      <div 
+        className={`mobile-page-content ${showControls ? 'controls-visible' : 'controls-hidden'}`} 
+        ref={pageRef}
+      >
+        {loading ? (
+          <div className="mobile-page-loading">
+            <div className="loading-spinner">
+              <FontAwesomeIcon icon={faSpinner} className="mobile-loading-icon fa-spin" />
+            </div>
+            <span>Loading content...</span>
+          </div>
+        ) : !currentPageStructure ? (
+          <div className="mobile-page-error">
+            <h2>Page not found</h2>
+            <p>Sorry, the requested page could not be found.</p>
+          </div>
+        ) : (
+          <div className="mobile-page-wrapper">
+            {/* Reading progress indicator */}
+            <div className="reading-progress-bar">
+              <div 
+                className="reading-progress-indicator" 
+                style={{ 
+                  width: `${playbookStructure?.pages?.length > 1 ? 
+                    (currentPage / (playbookStructure.pages.length - 1)) * 100 : 
+                    currentPage > 0 ? 100 : 0}%` 
+                }}
+              ></div>
+            </div>
+            
+            <div className="mobile-page-header">
+              <h1 className="mobile-page-title">{currentPageStructure.title}</h1>
+              <div className="mobile-page-progress">
+                <div className="mobile-progress-indicator">
+                  <span className="current-page">{currentPage + 1}</span>
+                  <span className="page-separator">of</span>
+                  <span className="total-pages">{playbookStructure?.pages?.length || 0}</span>
+                </div>
+                <div className="mobile-progress-bar">
+                  <div 
+                    className="mobile-progress-fill" 
+                    style={{ 
+                      width: `${playbookStructure?.pages?.length ? ((currentPage + 1) / playbookStructure.pages.length) * 100 : 0}%` 
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mobile-progress-bar">
+                <div 
+                  className="mobile-progress-fill" 
+                  style={{ 
+                    width: `${playbookStructure?.pages?.length ? ((currentPage + 1) / playbookStructure.pages.length) * 100 : 0}%` 
+                  }}
+                ></div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Render sections based on structure */}
+          {Array.isArray(currentPageStructure?.sections) && currentPageStructure.sections.map((section, sectionIndex) => {
+            if (!section || typeof section !== 'object') return null;
+            switch (section.type) {
+              case 'cards':
+                return (
+                  <div key={sectionIndex} className="mobile-section-cards">
+                    {Array.isArray(section.content) && section.content.map((card, index) => (
+                      <div key={index} className="mobile-card">
+                        <h2 className="mobile-card-title">{card.title}</h2>
+                        <p className="mobile-card-description">{card.description}</p>
+                        {card.footer && (
+                          <div className="mobile-card-footer">
+                            {card.footer}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                );
+                onClick={() => {
+                  setBookmarked(!bookmarked);
+                  // Save bookmark to localStorage if needed
+                  if (!bookmarked) {
+                    // Store in localStorage
+                    const bookmarks = JSON.parse(localStorage.getItem('playbook-bookmarks') || '[]');
+                    const newBookmark = { 
+                      playbookId: playbookStructure.id, 
+                      page: currentPage,
+                      title: currentPageStructure.title,
+                      timestamp: new Date().toISOString()
+                    };
+                    bookmarks.push(newBookmark);
+                    localStorage.setItem('playbook-bookmarks', JSON.stringify(bookmarks));
+                  }
+                }}
+                aria-label="Bookmark this page"
+              >
+                <FontAwesomeIcon icon={faBookmark} />
+              </button>
+              <button 
+                className="reading-tool-button"
+                onClick={() => {
+                  const url = new URL(window.location.href);
+                  const params = new URLSearchParams(url.search);
+                  params.set('c', currentPage + 1); // Set to 1-based index for the URL
+                  url.search = params.toString();
+                  
+                  if (navigator.share) {
+                    navigator.share({
+                      title: currentPageStructure.title,
+                      text: `Check out this playbook section: ${currentPageStructure.title}`,
+                      url: url.toString()
+                    })
+                    .catch(error => console.log('Error sharing:', error));
+                  } else {
+                    // Fallback for browsers without Web Share API
+                    navigator.clipboard.writeText(url.toString())
+                      .then(() => alert('Link copied to clipboard!'))
+                      .catch(err => console.error('Could not copy link: ', err));
+                  }
+                }}
+                aria-label="Share this page"
+              >
+                <FontAwesomeIcon icon={faShare} />
+              </button>
+              <button 
+                className="reading-tool-button"
+                onClick={() => {
+                  const sizes = ['small', 'medium', 'large'];
+                  const currentIndex = sizes.indexOf(fontSize);
+                  const nextIndex = (currentIndex + 1) % sizes.length;
+                  setFontSize(sizes[nextIndex]);
+                }}
+                aria-label="Change font size"
+              >
+                <FontAwesomeIcon icon={faFont} />
+              </button>
+              <button 
+                className="reading-tool-button"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                aria-label="Scroll to top"
+              >
+                <FontAwesomeIcon icon={faArrowUp} />
+              </button>
+            </div>
+            
+            {/* Table of contents button */}
+            <button className="toc-toggle-button" aria-label="View table of contents">
+              <FontAwesomeIcon icon={faListUl} />
+            </button>
+            
+            <div className="mobile-page-navigation">
+              <button 
+                className="mobile-page-nav-button prev"
+                onClick={onPrevPage}
+                disabled={currentPage === 0}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+                <span>Previous</span>
+              </button>
+              
+              <button 
+                className="mobile-page-nav-button next"
+                onClick={onNextPage}
+                disabled={currentPage === playbookStructure.pages.length - 1}
+              >
+                <span>Next</span>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </div>
+            
+            {/* End of page indicator */}
+            <div className="page-end-indicator">
+              <div className="page-end-line"></div>
+              <div className="page-end-text">End of section</div>
+              <div className="page-end-line"></div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+export default MobilePageContent;

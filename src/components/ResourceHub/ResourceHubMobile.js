@@ -229,7 +229,7 @@ const ResourceHubMobile = () => {
             Your contribution helps me create more in-depth marketing resources.
           </p>
           <a 
-            href="https://www.buymeacoffee.com/amitbhalla" 
+            href="https://ko-fi.com/amitbhalla" 
             target="_blank" 
             rel="noopener noreferrer"
             className="mobile-support-button"
