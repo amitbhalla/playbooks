@@ -1,6 +1,7 @@
 import React from 'react';
 import ResourceHub from './components/ResourceHub/ResourceHub';
 import ResourceHubMobile from './components/ResourceHub/ResourceHubMobile';
+import AdBanner from './components/AdBanner/AdBanner';
 import useViewport from './hooks/useViewport';
 import './App.css';
 
@@ -38,6 +39,7 @@ function App() {
                 <p>© {new Date().getFullYear()} Amit Bhalla. All rights reserved.</p>
               </div>
             </div>
+            <AdBanner className="desktop-footer-ad" format="horizontal" />
           </footer>
         </>
       ) : (
@@ -58,6 +60,7 @@ function App() {
               <p>© {new Date().getFullYear()} Amit Bhalla. All rights reserved.</p>
               <p>Contact: <a href="mailto:amit9815@gmail.com">amit9815@gmail.com</a></p>
             </div>
+            <AdBanner className="mobile-footer-ad" format="rectangle" />
           </footer>
         </>
       )}

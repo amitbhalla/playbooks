@@ -176,6 +176,18 @@
   text-decoration: underline;
 }
 
+/* Footer Ad Styles */
+.desktop-footer-ad {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+}
+
+.mobile-footer-ad {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .App-header {
