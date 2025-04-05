@@ -1,0 +1,260 @@
+{
+    "id": "ai-marketing-playbook",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "Introduction to AI in Marketing",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "aiDefinitionCallout"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "marketSizeStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "businessImpact"
+          },
+          {
+            "type": "cards",
+            "contentRef": "keyBenefits"
+          }
+        ]
+      },
+      {
+        "id": "ai-marketing-landscape",
+        "title": "The AI Marketing Technology Landscape",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "landscapeTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "landscapeOverview"
+          },
+          {
+            "type": "tabs",
+            "contentRef": "aiTechCategories"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "capabilitiesTitle"
+          },
+          {
+            "type": "grid",
+            "contentRef": "aiCapabilities"
+          },
+          {
+            "type": "callout",
+            "contentRef": "buildVsBuyCallout"
+          }
+        ]
+      },
+      {
+        "id": "strategy-implementation",
+        "title": "AI Strategy & Implementation",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "strategyTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "strategyDescription"
+          },
+          {
+            "type": "process",
+            "contentRef": "implementationProcess"
+          },
+          {
+            "type": "callout",
+            "contentRef": "readinessCallout"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "implementationPitfalls"
+          }
+        ]
+      },
+      {
+        "id": "ai-use-cases",
+        "title": "Practical AI Use Cases in Marketing",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "useCasesTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "useCasesIntro"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "contentCreationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "contentCreationDesc"
+          },
+          {
+            "type": "cards",
+            "contentRef": "contentCreationCases"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "personalizationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "personalizationDesc"
+          },
+          {
+            "type": "cards",
+            "contentRef": "personalizationCases"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "analyticsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "analyticsDesc"
+          },
+          {
+            "type": "cards",
+            "contentRef": "analyticsCases"
+          }
+        ]
+      },
+      {
+        "id": "ai-content-creation",
+        "title": "AI-Powered Content Creation",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "contentTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "contentDescription"
+          },
+          {
+            "type": "steps",
+            "contentRef": "contentWorkflow"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "contentToolsComparison"
+          },
+          {
+            "type": "callout",
+            "contentRef": "contentQualityCallout"
+          },
+          {
+            "type": "quote",
+            "contentRef": "contentCreatorQuote"
+          }
+        ]
+      },
+      {
+        "id": "customer-experience-ai",
+        "title": "AI-Enhanced Customer Experience",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "cxTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "cxDescription"
+          },
+          {
+            "type": "icon",
+            "contentRef": "cxIcon"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "personalizationEngineTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "personalizationEngineDesc"
+          },
+          {
+            "type": "steps",
+            "contentRef": "personalizationImplementation"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "conversationalAITitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conversationalAIDesc"
+          },
+          {
+            "type": "cards",
+            "contentRef": "conversationalPlatforms"
+          },
+          {
+            "type": "callout",
+            "contentRef": "cxMeasurementCallout"
+          }
+        ]
+      },
+      {
+        "id": "future-ai-marketing",
+        "title": "The Future of AI in Marketing",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "futureTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "futureDescription"
+          },
+          {
+            "type": "grid",
+            "contentRef": "emergingTrends"
+          },
+          {
+            "type": "callout",
+            "contentRef": "ethicalConsiderationsCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "preparationTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "preparationDesc"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "preparationSteps"
+          },
+          {
+            "type": "statistic",
+            "contentRef": "adoptionStat"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      }
+    ]
+  }

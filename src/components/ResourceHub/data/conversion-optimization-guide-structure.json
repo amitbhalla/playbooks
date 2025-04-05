@@ -1,0 +1,288 @@
+{
+  "id": "conversion-optimization-guide",
+  "version": "1.0",
+  "pages": [
+    {
+      "id": "introduction",
+      "title": "Introduction to CRO",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "introTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "introDescription"
+        },
+        {
+          "type": "statistic",
+          "contentRef": "introStatistic"
+        },
+        {
+          "type": "grid",
+          "contentRef": "croBenefits"
+        },
+        {
+          "type": "callout",
+          "contentRef": "definitionCallout"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "guideOverview"
+        }
+      ]
+    },
+    {
+      "id": "research-analysis",
+      "title": "Customer Research & Analysis",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "researchTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "researchDescription"
+        },
+        {
+          "type": "process",
+          "contentRef": "researchProcess"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "dataSourcesTitle"
+        },
+        {
+          "type": "cards",
+          "contentRef": "researchMethods"
+        },
+        {
+          "type": "callout",
+          "contentRef": "insightsCallout"
+        },
+        {
+          "type": "quote",
+          "contentRef": "researchQuote"
+        }
+      ]
+    },
+    {
+      "id": "conversion-framework",
+      "title": "Conversion Framework",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "frameworkTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "frameworkDescription"
+        },
+        {
+          "type": "icon",
+          "contentRef": "frameworkIcon"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "elementsTitle"
+        },
+        {
+          "type": "tabs",
+          "contentRef": "frameworkElements"
+        },
+        {
+          "type": "callout",
+          "contentRef": "frameworkCallout"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "frameworkApplication"
+        }
+      ]
+    },
+    {
+      "id": "optimization-tactics",
+      "title": "Proven Optimization Tactics",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "tacticsTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "tacticsDescription"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "valuePropositionTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "valuePropositionDescription"
+        },
+        {
+          "type": "list",
+          "contentRef": "valuePropositionTactics"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "frictionTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "frictionDescription"
+        },
+        {
+          "type": "grid",
+          "contentRef": "frictionTacticsGrid"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "urgencyTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "urgencyDescription"
+        },
+        {
+          "type": "cards",
+          "contentRef": "urgencyTacticsCards"
+        },
+        {
+          "type": "callout",
+          "contentRef": "tacticsCallout"
+        }
+      ]
+    },
+    {
+      "id": "ab-testing",
+      "title": "A/B Testing Methodology",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "testingTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "testingDescription"
+        },
+        {
+          "type": "process",
+          "contentRef": "testingProcess"
+        },
+        {
+          "type": "steps",
+          "contentRef": "testingSteps"
+        },
+        {
+          "type": "callout",
+          "contentRef": "testingPitfalls"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "statisticalTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "statisticalDescription"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "statisticalConsiderations"
+        },
+        {
+          "type": "statistic",
+          "contentRef": "testingStat"
+        }
+      ]
+    },
+    {
+      "id": "advanced-techniques",
+      "title": "Advanced CRO Techniques",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "advancedTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "advancedDescription"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "personalizationTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "personalizationDescription"
+        },
+        {
+          "type": "grid",
+          "contentRef": "personalizationTypes"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "aiTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "aiDescription"
+        },
+        {
+          "type": "cards",
+          "contentRef": "aiApplicationsCards"
+        },
+        {
+          "type": "callout",
+          "contentRef": "advancedCallout"
+        }
+      ]
+    },
+    {
+      "id": "implementation-case-studies",
+      "title": "Implementation & Case Studies",
+      "sections": [
+        {
+          "type": "header",
+          "contentRef": "implementationTitle"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "implementationDescription"
+        },
+        {
+          "type": "featured-list",
+          "contentRef": "implementationRoadmap"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "caseStudy1Title"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "caseStudy1Description"
+        },
+        {
+          "type": "list",
+          "contentRef": "caseStudy1Results"
+        },
+        {
+          "type": "subheader",
+          "contentRef": "caseStudy2Title"
+        },
+        {
+          "type": "paragraph",
+          "contentRef": "caseStudy2Description"
+        },
+        {
+          "type": "list",
+          "contentRef": "caseStudy2Results"
+        },
+        {
+          "type": "callout",
+          "contentRef": "conclusionCallout"
+        }
+      ]
+    }
+  ]
+}
