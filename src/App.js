@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <div className="App-header-content">
           <h1>Marketing Resource Hub</h1>
-          <p>Access my premium playbooks and guides to elevate your marketing strategy</p>
+          <p>Access my premium playbooks to elevate your marketing strategy</p>
         </div>
       </header>
       
