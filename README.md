@@ -49,13 +49,25 @@ The Marketing Resource Hub is a React-based web application that serves as a cen
 
 ## 🔄 Build and Deployment
 
-To create a production build:
+### Local Build
+
+To create a production build for local use:
 
 ```bash
 npm run build
 ```
 
 The build artifacts will be stored in the `build/` directory.
+
+### GitHub Pages Deployment
+
+The project is set up for easy deployment to GitHub Pages. To deploy your latest changes:
+
+```bash
+npm run deploy
+```
+
+This command will build the project and publish it to the `gh-pages` branch of your repository. The live version will be available at: [https://amitbhalla.github.io/playbooks/](https://amitbhalla.github.io/playbooks/)
 
 ## 🧩 Project Structure
 
