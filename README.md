@@ -88,11 +88,22 @@ This command will build the project and publish it to the `gh-pages` branch of y
 │   │   │   │   ├── [playbook]-structure.json    # Structure definitions
 │   │   │   │   └── [playbook]-content.json      # Content definitions
 │   │   │   ├── ResourceHub.js                   # Main desktop component
-│   │   │   └── ResourceHubMobile.js             # Mobile-optimized component
-│   │   ├── MobileNavbar/    # Mobile navigation component
-│   │   └── MobilePageContent/ # Mobile content display component
-│   ├── App.js              # Main App component (with responsive routing)
-│   └── index.js            # Application entry point
+│   │   │   └── ResourceHubMobile.js             # Original mobile component
+│   │   ├── mobile/         # Enhanced mobile components (v2.0)
+│   │   │   ├── MobileHeader/         # Mobile header component
+│   │   │   ├── PlaybookSelector/     # Playbook selection modal
+│   │   │   ├── ContentSection/       # Content type renderer
+│   │   │   ├── MobilePageContent/    # Main content container
+│   │   │   ├── PageNavigator/        # Navigation controls
+│   │   │   ├── ResourceHubMobile/    # Main mobile container
+│   │   │   └── shared/               # Shared styles and variables
+│   │   ├── AdBanner/      # Advertisement banner component
+│   │   ├── MobileNavbar/  # Original mobile navigation component
+│   │   └── MobilePageContent/ # Original mobile content component
+│   ├── hooks/             # Custom React hooks
+│   │   └── useOutsideClick.js # Hook for detecting outside clicks
+│   ├── App.js            # Main App component (with responsive routing)
+│   └── index.js          # Application entry point
 └── package.json            # Project dependencies and scripts
 ```
 
@@ -120,39 +131,62 @@ Both parameters are maintained in sync with user navigation, making deep linking
 The application includes a dedicated mobile experience with the following features:
 
 - **Responsive Design**: Automatically switches between desktop and mobile views based on screen size
-- **Mobile Navigation**:
-  - Clean, simplified navbar with playbook selector
-  - Side menu for additional navigation options
-  - Fixed bottom navigation controls for page navigation
-- **Touch Gestures**: Swipe left/right to navigate between pages
-- **Optimized Layout**: Content formatting optimized for smaller screens
-- **Performance**: Optimized for mobile devices with smooth animations and transitions
+- **Magazine-Style Layout**: Modern, elegant reading experience inspired by premium digital publications
+- **Enhanced Mobile Navigation**:
+  - Clean, minimal header with playbook title
+  - Modal-based playbook selector with descriptions
+  - Intuitive page navigation with progress indicators
+  - Section progress indicators for content navigation
+- **Content Presentation**:
+  - Drop caps for first paragraphs
+  - Optimized typography and spacing for readability
+  - Card-based content modules for better information hierarchy
+  - Enhanced callouts and featured sections
+- **Interactive Elements**:
+  - Touch gestures (swipe left/right) for page navigation
+  - Tap section indicators to jump to specific content
+  - Smooth transitions between pages and sections
+- **Support Integration**: "Ko-fi" support section for viewers to contribute
+- **Performance**: Optimized for mobile devices with efficient component architecture
 
 ## 📈 Change Log
 
-### Version 1.0.0 (Initial Release)
-- Basic playbook navigation and content display
-- Desktop-oriented UI with responsive elements
-- Support for multiple content formats
+### Version 2.0.0 (Current - April 2025)
+- Complete mobile UI modernization:
+  - Magazine-style reading experience with premium typography
+  - Modular component architecture for better maintainability
+  - Enhanced visual hierarchy and content presentation
+  - Section progress indicators for content navigation
+  - Modal-based playbook selector with descriptions
+- Integration with Google Analytics for usage tracking
+- Integration with Google AdSense for monetization
+- Updated support section with Ko-fi integration
+- Fixed desktop layout spacing and alignment issues
+- Improved CSS organization with shared variables
 
-### Version 1.1.0
-- Added URL parameter support (`?p=1`) for direct playbook access
-- Improved navigation between playbooks
-- Enhanced error handling for content loading
-
-### Version 1.2.0
-- Added deep linking support with content page parameters (`?p=1&c=2`)
-- State synchronization with URL parameters
-- Improved bookmarking and sharing functionality
-
-### Version 1.3.0 (Current)
-- Complete mobile experience overhaul:
+### Version 1.3.0
+- Mobile experience overhaul:
   - Added dedicated mobile navigation component
   - Implemented gesture-based navigation with Hammer.js
   - Created optimized mobile content display
   - Added mobile-specific layout and styling
 - Support section with "Buy Me A Coffee" integration
 - Various UI/UX improvements and bug fixes
+
+### Version 1.2.0
+- Added deep linking support with content page parameters (`?p=1&c=2`)
+- State synchronization with URL parameters
+- Improved bookmarking and sharing functionality
+
+### Version 1.1.0
+- Added URL parameter support (`?p=1`) for direct playbook access
+- Improved navigation between playbooks
+- Enhanced error handling for content loading
+
+### Version 1.0.0 (Initial Release)
+- Basic playbook navigation and content display
+- Desktop-oriented UI with responsive elements
+- Support for multiple content formats
 
 ## 🔄 Adding New Playbooks
 
