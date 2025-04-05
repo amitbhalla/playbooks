@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2eb86264.css",
+    "main.js": "/static/js/main.2bdeac13.js",
+    "static/js/20.4c11494f.chunk.js": "/static/js/20.4c11494f.chunk.js",
+    "static/js/429.5c6bea55.chunk.js": "/static/js/429.5c6bea55.chunk.js",
+    "static/js/661.52536656.chunk.js": "/static/js/661.52536656.chunk.js",
+    "static/js/564.b6a4906a.chunk.js": "/static/js/564.b6a4906a.chunk.js",
+    "static/js/976.7b86bc84.chunk.js": "/static/js/976.7b86bc84.chunk.js",
+    "static/js/877.ea30aea8.chunk.js": "/static/js/877.ea30aea8.chunk.js",
+    "static/js/605.9e22d485.chunk.js": "/static/js/605.9e22d485.chunk.js",
+    "static/js/982.7990c2e8.chunk.js": "/static/js/982.7990c2e8.chunk.js",
+    "static/js/610.ddcf57d6.chunk.js": "/static/js/610.ddcf57d6.chunk.js",
+    "static/js/960.ee081521.chunk.js": "/static/js/960.ee081521.chunk.js",
+    "static/js/284.a86ffded.chunk.js": "/static/js/284.a86ffded.chunk.js",
+    "static/js/677.48a1056b.chunk.js": "/static/js/677.48a1056b.chunk.js",
+    "static/js/269.a42af9d3.chunk.js": "/static/js/269.a42af9d3.chunk.js",
+    "static/js/484.54e9a7e6.chunk.js": "/static/js/484.54e9a7e6.chunk.js",
+    "static/js/0.e05ecd91.chunk.js": "/static/js/0.e05ecd91.chunk.js",
+    "static/js/172.7c5c9e11.chunk.js": "/static/js/172.7c5c9e11.chunk.js",
+    "static/js/72.47e28696.chunk.js": "/static/js/72.47e28696.chunk.js",
+    "static/js/171.702d3baa.chunk.js": "/static/js/171.702d3baa.chunk.js",
+    "static/js/187.526ab0e0.chunk.js": "/static/js/187.526ab0e0.chunk.js",
+    "static/js/675.74b70c8d.chunk.js": "/static/js/675.74b70c8d.chunk.js",
+    "static/js/323.2d871091.chunk.js": "/static/js/323.2d871091.chunk.js",
+    "static/js/572.e3063f9c.chunk.js": "/static/js/572.e3063f9c.chunk.js",
+    "static/js/608.dd3326a5.chunk.js": "/static/js/608.dd3326a5.chunk.js",
+    "static/js/611.4525285f.chunk.js": "/static/js/611.4525285f.chunk.js",
+    "static/js/523.1e5cd485.chunk.js": "/static/js/523.1e5cd485.chunk.js",
+    "index.html": "/index.html",
+    "main.2eb86264.css.map": "/static/css/main.2eb86264.css.map",
+    "main.2bdeac13.js.map": "/static/js/main.2bdeac13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eb86264.css",
+    "static/js/main.2bdeac13.js"
+  ]
+}
