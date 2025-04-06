@@ -62,5 +62,16 @@
     "category": "Talent Acquisition",
     "level": "Advanced",
     "estimatedTime": "45 minutes"
+  },
+  {
+    "id": "b2b-marketing-attribution-guide",
+    "title": "B2B Marketing Attribution Guide",
+    "subtitle": "The definitive guide to understanding and implementing marketing attribution in B2B environments",
+    "description": "A comprehensive guide for marketing professionals in B2B environments, covering the key concepts, frameworks, and tools needed to implement effective marketing attribution.",
+    "structureFile": "b2b-marketing-attribution-guide-structure.json",
+    "contentFile": "b2b-marketing-attribution-guide-content.json",
+    "category": "Analytics & Measurement",
+    "level": "Intermediate",
+    "estimatedTime": "45 minutes"
   }
 ]

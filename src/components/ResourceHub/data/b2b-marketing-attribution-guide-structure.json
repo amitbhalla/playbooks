@@ -1,0 +1,524 @@
+{
+    "id": "b2b-marketing-attribution-guide",
+    "version": "1.0",
+    "pages": [
+      {
+        "id": "introduction",
+        "title": "The Real Problem",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "introTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "introDescription"
+          },
+          {
+            "type": "callout",
+            "contentRef": "realProblemCallout"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "symptomsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "commonSymptoms"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "solutionsFailTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "solutionFailures"
+          }
+        ]
+      },
+      {
+        "id": "phased-approach",
+        "title": "The Fix: A Phased Approach",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "phasedApproachTitle"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "phase1Title"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "phase1Description"
+          },
+          {
+            "type": "process",
+            "contentRef": "foundationComponents"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "dataCleanupTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "dataCleanupSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "goForwardDataTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "goForwardDataSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "politicalAlignmentTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "politicalAlignmentSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "technicalFoundationTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "technicalSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "quickWinTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "quickWinSteps"
+          },
+          {
+            "type": "callout",
+            "contentRef": "webinarExample"
+          }
+        ]
+      },
+      {
+        "id": "building-credibility",
+        "title": "Building Credibility",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "phase2Title"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "phase2Description"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "enhancedAttributionTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "enhancedAttributionSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "revenueFocusTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "revenueFocusSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "revOpsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "revOpsSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "executiveAlignmentTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "executiveAlignmentSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "executiveEducationTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "executiveEducationSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "cfoAlignmentTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "cfoAlignmentSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "incentiveTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "incentiveSteps"
+          }
+        ]
+      },
+      {
+        "id": "scaling-success",
+        "title": "Scaling Success",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "phase3Title"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "phase3Description"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "advancedAttributionTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "advancedAttributionSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "abmFrameworkTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "abmFrameworkSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "multiContactTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "multiContactSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "predictiveTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "predictiveSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "aiAttributionTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "aiAttributionSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "brandMetricsTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "brandMetricsTable"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "brandPipelineConnection"
+          }
+        ]
+      },
+      {
+        "id": "real-world-obstacles",
+        "title": "Real-World Obstacles and Solutions",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "obstaclesTitle"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salesObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "salesObstacleSolution"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "crmObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "crmObstacleSolution"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "offlineObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "offlineObstacleSolution"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "leadershipObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "leadershipObstacleSolution"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salesCycleObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "salesCycleObstacleSolution"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "servicesObstacleTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "servicesObstacleSolution"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "servicesAttributionTable"
+          }
+        ]
+      },
+      {
+        "id": "implementation-tools",
+        "title": "Practical Implementation Tools",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "implementationToolsTitle"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "dashboardTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "dashboardDescription"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "dashboardTable"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "dashboardDistribution"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "dashboardUsage"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "attributionModelTitle"
+          },
+          {
+            "type": "comparison",
+            "contentRef": "attributionModelTable"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "definitionsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "definitionsList"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "workshopTitle"
+          },
+          {
+            "type": "steps",
+            "contentRef": "workshopSteps"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "pipelineCouncilTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "pipelineCouncilSteps"
+          }
+        ]
+      },
+      {
+        "id": "making-it-work",
+        "title": "Making This Work In Your Organization",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "organizationTitle"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "ceoBoardTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "ceoBoardPoints"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "salesLeadersTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "salesLeadersPoints"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "marketingTeamTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "marketingTeamPoints"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "productTeamTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "productTeamPoints"
+          }
+        ]
+      },
+      {
+        "id": "measuring-success",
+        "title": "Measuring Success",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "measuringSuccessTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "measuringSuccessDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "thirtyDaysTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "thirtyDaysMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "sixtyDaysTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "sixtyDaysMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "ninetyDaysTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "ninetyDaysMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "sixMonthsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "sixMonthsMetrics"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "quarterlyUpdatesTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "quarterlyUpdatesSteps"
+          }
+        ]
+      },
+      {
+        "id": "warning-signs",
+        "title": "Warning Signs That Require Immediate Action",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "warningSignsTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "warningSignsList"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "warningSignsConclusion"
+          }
+        ]
+      },
+      {
+        "id": "common-pitfalls",
+        "title": "Lessons From the Field: Common Pitfalls",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "pitfallsTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "pitfallsIntro"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "pitfallsList"
+          }
+        ]
+      },
+      {
+        "id": "conclusion",
+        "title": "Conclusion: Redefining Marketing's Role",
+        "sections": [
+          {
+            "type": "header",
+            "contentRef": "conclusionTitle"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionDescription"
+          },
+          {
+            "type": "subheader",
+            "contentRef": "successLooksLikeTitle"
+          },
+          {
+            "type": "featured-list",
+            "contentRef": "successLooksLikeList"
+          },
+          {
+            "type": "paragraph",
+            "contentRef": "conclusionParagraph"
+          }
+        ]
+      }
+    ]
+  }

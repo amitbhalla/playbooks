@@ -995,7 +995,8 @@
 .comparison-headers {
   display: flex;
   background-color: var(--darker);
-  color: var(--light);
+  color: var(--dark);
+  text-align: center;
 }
 
 .comparison-feature-header {

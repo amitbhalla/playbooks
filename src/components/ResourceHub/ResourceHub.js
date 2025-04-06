@@ -418,7 +418,6 @@ const ResourceHub = () => {
                   <h3 className="comparison-title">{comparisonContent.title}</h3>
                   <div className="comparison-table">
                     <div className="comparison-headers">
-                      <div className="comparison-feature-header">Feature</div>
                       {comparisonContent.columns.map((column, colIndex) => (
                         <div key={colIndex} className="comparison-column-header">
                           {column}
