@@ -13,9 +13,9 @@
       },
   
       "marketingGrowthStat": {
-        "value": "32%",
+        "value": "40%",
         "label": "Job Growth Rate",
-        "description": "Marketing roles in India are projected to grow 32% faster than the overall job market through 2025, with digital marketing specialists being the most in-demand. Companies are increasing marketing budgets by an average of 18% year-over-year, creating thousands of new opportunities."
+        "description": "Digital marketing roles in India are projected to grow 40% faster than the overall job market through 2025, with digital marketing specialists being the most in-demand. Companies are increasing marketing budgets by an average of 18% year-over-year, creating thousands of new opportunities."
       },
       
       "whyMarketingIndia": "Marketing in India offers unique advantages and challenges unlike anywhere else in the world. With 1.4 billion diverse consumers spread across urban metros, tier-2/3 cities, and rural markets—each with distinct preferences, languages, and buying behaviors—Indian marketers must develop specialized skills to succeed. The convergence of traditional marketing channels with rapid digital adoption creates a dynamic environment where creative, adaptable professionals can thrive and advance quickly.",
@@ -42,7 +42,7 @@
           {
             "icon": "bullseye",
             "title": "Competitive Compensation",
-            "description": "Marketing salaries in India are growing at 12-15% annually, with digital specialists and those with data skills commanding premium compensation packages."
+            "description": "Marketing salaries in India are growing at 10-15% annually, with digital specialists and those with data skills commanding premium compensation packages."
           }
         ]
       },
@@ -542,7 +542,7 @@
       "salaryExpectationsTitle": "2025 Entry-Level Marketing Salary Guide (Annual CTC)",
       "salaryComparison": {
         "title": "Salary Ranges by Role and Location",
-        "columns": ["Role", "Tier-1 Cities", "Tier-2 Cities"],
+        "columns": ["Tier-1 Cities", "Tier-2 Cities", "Remote"],
         "rows": [
           {
             "feature": "Digital Marketing Executive",
