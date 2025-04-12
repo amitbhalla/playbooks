@@ -113,7 +113,7 @@
       "distinctionTitle": "Differentiation Strategy Framework",
       "distinctionFramework": {
         "title": "B2B Product Differentiation Matrix",
-        "columns": ["Weakest", "Potential", "Good", "Strongest"],
+        "columns": ["Factors","Weakest", "Potential", "Good", "Strongest"],
         "rows": [
           {
             "feature": "Technical Differentiation",
@@ -269,7 +269,7 @@
       
       "researchToolComparison": {
         "title": "B2B Market Research Tools Comparison",
-        "columns": ["Basic Tier (<$500/mo)", "Mid-Range ($500-2000/mo)", "Enterprise (>$2000/mo)"],
+        "columns": ["Topic","Basic Tier (<$500/mo)", "Mid-Range ($500-2000/mo)", "Enterprise (>$2000/mo)"],
         "rows": [
           {
             "feature": "Competitive Intelligence",
@@ -392,7 +392,7 @@
       
       "beforeAfterMessaging": {
         "title": "Before and After Messaging Examples",
-        "columns": ["Weak Messaging", "Strong Messaging", "Why It Works"],
+        "columns": ["Type", "Weak Messaging", "Strong Messaging", "Why It Works"],
         "rows": [
           {
             "feature": "Feature-Focused",
@@ -558,7 +558,7 @@
       "channelTitle": "Channel Strategy Development",
       "channelStrategy": {
         "title": "B2B Channel Strategy Matrix",
-        "columns": ["Direct Sales", "Partner Channel", "Digital Self-Service"],
+        "columns": ["Type", "Direct Sales", "Partner Channel", "Digital Self-Service"],
         "rows": [
           {
             "feature": "Best For",

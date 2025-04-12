@@ -79,7 +79,7 @@
       "digitalVsTraditionalTitle": "Digital vs. Traditional Marketing in India: The Hybrid Reality",
       "digitalVsTraditionalComparison": {
         "title": "Marketing Channels in Modern India",
-        "columns": ["Digital Marketing", "Traditional Marketing", "Integrated Approach (Most In-Demand)"],
+        "columns": ["Channel", "Digital Marketing", "Traditional Marketing", "Integrated Approach (Most In-Demand)"],
         "rows": [
           {
             "feature": "Primary Channels",
@@ -542,7 +542,7 @@
       "salaryExpectationsTitle": "2025 Entry-Level Marketing Salary Guide (Annual CTC)",
       "salaryComparison": {
         "title": "Salary Ranges by Role and Location",
-        "columns": ["Tier-1 Cities", "Tier-2 Cities", "Remote"],
+        "columns": ["Roles", "Tier-1 Cities", "Tier-2 Cities", "Remote"],
         "rows": [
           {
             "feature": "Digital Marketing Executive",

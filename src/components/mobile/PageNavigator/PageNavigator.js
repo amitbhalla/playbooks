@@ -13,6 +13,13 @@ const PageNavigator = ({
 }) => {
   return (
     <div className="page-navigator">
+      <div className="page-progress-bar">
+        <div 
+          className="page-progress-fill"
+          style={{width: `${((currentPage + 1) / totalPages) * 100}%`}}
+        ></div>
+      </div>
+      
       <div className="page-navigation-controls">
         <button
           className="page-nav-button prev"
@@ -24,16 +31,8 @@ const PageNavigator = ({
           <span className="page-nav-label">Previous</span>
         </button>
         
-        <div className="page-indicator">
-          <div className="page-progress-bar">
-            <div 
-              className="page-progress-fill"
-              style={{width: `${((currentPage + 1) / totalPages) * 100}%`}}
-            ></div>
-          </div>
-          <div className="page-count">
-            {currentPage + 1} / {totalPages}
-          </div>
+        <div className="page-count">
+          {currentPage + 1} / {totalPages}
         </div>
         
         <button
